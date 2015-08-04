@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<html>
+<head>
+<meta charset="utf-8">
+<meta charset=utf-8 />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My App</title>
+<!--css styles-->
+<link rel="stylesheet" href="mycss.css">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!--scrip-->
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/1.1.1/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js"></script>
+
+	<script type="text/javascript">
+	
+$(document).ready(function(){
+    $(".slidedownimg").click(function(){
+
+        $("#links").show(1000);
+    });
+    });
+</script>
+</head>
+<body>
+<div id="backdiv" data-role="page">
+<div class="tinted-image">
+ <div class="wrap">
+ <img src="images/sch.jpg" width="100px" height="100px">
+<h1 class="neon">Personal planner</h1>
+<a href="#mainapp" data-transition="slidefade" id ="cus" class="btn btn-lg">
+  <button>EXPLORE <span class="glyphicon glyphicon-arrow-right"></span></button>
+  </a>
+ </div>
+</div>
+</div>
+
+<div data-role="page" id="mainapp">
+<div id ="homepage"><a href="#backdiv" data-transition="pop"><span class="glyphicon glyphicon-chevron-left"></span> Back to HomePage</a></div>
+<div class="header">
+<ul>
+	<li class="pull-left" ><img src="images/menu.png" width="30px" height="30px"  class ="slidedownimg" ></li>
+	<li class="pull-right">ssssssss</li>
+</ul>
+</div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-3">
+	<div id="links">
+	<ul>
+		<li><h2 class="neon">Notes</h2></li>
+		<li><a href="#newnotes" data-toggle="tab">New</a></li>
+		<li><a href="#inprogress" data-toggle="tab">In Progress()</a></li>
+		<li><a href="#done" data-toggle="tab">Done()</a></li>
+		<li><a href="#Trash" data-toggle="tab">Trash</a></li>
+
+	<hr/>
+	
+		<li><h2 class="neon">Reminders</h2></li>
+		<li><a href="#reminder" data-toggle="tab">Add Reminder</a></li>
+		<li><a href="#viewreminder" data-toggle="tab">View Reminder(s)</a></li>
+	<hr/>
+	
+		<li><h2 class="neon">School Timetable</li>
+		<li><a href="#lecture" data-toggle="tab">Lecture Timetable</a></li>
+		<li><a href="#test" data-toggle="tab">Test Timetable</a></li>
+		<li><a href="#exam" data-toggle="tab">Examination Timetable</a></li>
+	</ul>
+</div>
+</div>
+<div class="col-xs-9">		
+<div class="displaybody">
+	
+<div class="tab-content">
+    <div id="newnotes" class="tab-pane fade">
+    <div class="container-fluid notetab">
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#add" id ="tabnote">Add Note</a></li>
+			<li class="nav nav-tabs navbar-right"><a data-toggle="tab" href="#addlist" id ="tablist">Add List</a></li>
+		</ul>
+		<div class="tab-content">
+			    <div id="add" class="tab-pane fade in active">
+			   
+			    <form class="addform">
+			    	<input type="text" placeholder="Title" class="noteinput" id = "notetext">
+			    	<textarea placeholder= "Details" id ="details"></textarea>
+			    	<div class="row">
+			    		<div class="col-xs-12">
+			  				<button class="simg" onclick="cancel()" class= "cancel" id = "leftn" style="width:100px;height:50px">Cancel</button>
+			  			
+							<button class="simg" id ="rightn" style="width:100px;height:50px">Save</button>				
+						</div>
+			    	</div>
+			    	</form>
+			    </div>
+				
+				<div id="addlist" class="tab-pane fade">
+				<ul>
+					<li><input type="checkbox" name="check" class="checkb"><input type="text" name="list" id="newlist"><a href="#">
+          <span class="glyphicon glyphicon-plus"></span>
+        </a></li>
+				</ul>
+				</div>
+		</div>
+	</div>
+
+    </div>
+    
+
+    
+    <div id="inprogress" class="tab-pane fade">
+    <div class="container-fluid">
+		dd
+	</div>
+
+    </div>
+    
+    
+    <div id="done" class="tab-pane fade">
+    <div class="container-fluid">
+		dd
+	</div>
+    </div>
+  
+  
+    <div id="Trash" class="tab-pane fade">
+    <div class="container-fluid">
+		dd
+	</div>
+
+    </div>
+    
+    
+    <div id="reminder" class="tab-pane fade">
+    <div class="container-fluid remind">
+		<form>
+    
+        
+            <fieldset>
+                <legend>Add Schedule</legend>
+                <div class="row">
+                    	<div class="col-xs-12">
+                    		<label>Schedule</label>
+                      		<input type="text" id="schedule" placeholder="schedule"></input>
+                   		</div>
+                </div>    
+                <div class="row">
+                    	<div class="col-xs-12">
+                    		<label>Location</label>
+                      		<input type="text" id="location" placeholder="location"></input>
+                    	</div>
+                </div>    
+                <div class="row">
+                    	<div class="col-xs-12">
+                    		<label>Description</label>
+                     		<textarea rows="4" cols="50" name="description">
+							</textarea>
+                    	</div>
+                </div>    
+             	
+                <div class="row">
+                  	 
+                    	<div class="col-xs-7">
+                    		<label>From</label>
+                      		<input type="date" name="startdate"></input>
+						</div>
+
+						<div class="col-xs-5">
+						<label>Time</label>
+                       		<input type="time" name="user_time" size="20"></input>
+                    	</div>
+				</div>
+				<div class="row">
+                      <div class="col-xs-7">
+							<label>To</label>
+                      		<input type="date" name="enddate"></input>
+                      </div>
+
+                      <div class="col-xs-5">
+                       		<label>Time</label>
+                        	  <input type="time" name="user_time" size="20"></input>
+                	  </div>
+               </div>
+
+   				<div class="row">
+						<div class="col-xs-6">
+			  				<button class="simg" id = "leftn" width="100px" height="20px">Cancel</button>
+			  			</div>
+			  			<div class="col-xs-6">
+							<button class="simg " id ="rightn" width="100px" height="20px">Done</button>				
+						</div>
+				</div>
+
+			</fieldset>
+			
+			
+			</form>
+	</div>
+
+    </div>
+   
+    <div id="viewreminder" class="tab-pane fade">
+    <div class="container-fluid">
+		dd
+	</div>
+
+    </div>
+   
+	
+    <div id="lecture" class="tab-pane fade">
+    <div class="container-fluid">
+		dd
+	</div>
+
+    </div>
+    
+
+    <div id="exam" class="tab-pane fade">
+    <div class="container-fluid">
+		dd
+	
+
+    </div>
+    </div>
+   
+    <div id="test" class="tab-pane fade">
+    <div class="container-fluid">
+		dd
+	</div>
+
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+    $(".cancel").click(function(){
+        $("#notetext").val(" ");
+    });
+});
+</script>
+</script>
+</body>
+</html>
