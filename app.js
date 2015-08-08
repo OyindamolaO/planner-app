@@ -20,7 +20,7 @@ $(function() {
       	 
 
       	$('<div/>').text(text).css({"background-color":color,
-      								"margin-bottom":"20px"}).addClass("important").addClass("imp").addClass("neon").prepend($('<p>').text(title).addClass("titlefont")).prepend(title+"<a href='#'>X</a>").css({"width":"250px",
+      								"margin-bottom":"20px"}).addClass("important").addClass("imp").addClass("neon").prepend($('<p>').text(title).addClass("titlefont")).prepend(title+"<a id='delete' href='#' style='float:right;'>X</a>").css({"width":"250px",
       								 "height":"auto","font-family":"Candara"}).fadeIn(999).slideDown(1000).prependTo($('#messagesDiv'));
         $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
         
