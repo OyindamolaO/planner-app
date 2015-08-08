@@ -97,8 +97,9 @@ $(function() {
 
       function displayChatMessage(schedule,location,description,startdate, starttime,enddate,endtime) {
 
-      	 $('#myTable').append("<tr><td>"+schedule+"</td><td>"+location+"</td><td>"+description+"</td><td>"+startdate+"</td><td>"+starttime+"</td><td>"+enddate+"</td><td>"+endtime+"</td><td><p id='countdown' onload='CountDownTimer("+startdate+" "+starttime+","+enddate+" "+endtime+", countdown)'></p></td</tr>");
-	};
+      	 $('#myTable').append("<tr><td>"+schedule+"</td><td>"+location+"</td><td>"+description+"</td><td>"+startdate+"</td><td>"+starttime+"</td><td>"+enddate+"</td><td>"+endtime+"</td><td><script>var end = new Date("+enddate+" "+endtime+"); var _second = 1000;var _minute = _second * 60;var _hour = _minute * 60;var _day = _hour * 24;var timer; function showRemaining() {var now = new Date("+startdate+" "+starttime+");var distance = end - now;if (distance < 0) {clearInterval(timer); document.getElementById('countdown').innerHTML = 'EXPIRED!';return;}var days = Math.floor(distance / _day);document.getElementById('countdown').innerHTML = days + 'days ';}timer = setInterval(showRemaining, 1000);</script><p id='countdown'></p></td</tr>");
+      	
+      };
 
     
       $('#rbtnc').click(function(snapshot){
@@ -110,37 +111,4 @@ $(function() {
 	     $('#endate').val('');
 	     $('#entime').val('');
       });
-      
-      function CountDownTimer(dt1,dt2, id)
-    {
-        var end = new Date(dt2);
-
-        var _second = 1000;
-        var _minute = _second * 60;
-        var _hour = _minute * 60;
-        var _day = _hour * 24;
-        var timer;
-
-        function showRemaining() {
-            var now = new Date(dt1);
-            var distance = end - now;
-            if (distance < 0) {
-
-                clearInterval(timer);
-                document.getElementById(id).innerHTML = 'EXPIRED!';
-
-                return;
-            }
-            var days = Math.floor(distance / _day);
-            var hours = Math.floor((distance % _day) / _hour);
-            var minutes = Math.floor((distance % _hour) / _minute);
-            var seconds = Math.floor((distance % _minute) / _second);
-
-            document.getElementById(id).innerHTML = days + 'days ';
-            document.getElementById(id).innerHTML += hours + 'hrs ';
-            document.getElementById(id).innerHTML += minutes + 'mins ';
-            document.getElementById(id).innerHTML += seconds + 'secs';
-        }
-		    timer = setInterval(showRemaining, 1000);
-}
 });
