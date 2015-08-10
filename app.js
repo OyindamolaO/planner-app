@@ -97,7 +97,7 @@ $(function() {
 
       function displayChatMessage(schedule,location,description,startdate, starttime,enddate,endtime) {
 
-      	 $('#myTable').append("<tr><td>"+schedule+"</td><td>"+location+"</td><td>"+description+"</td><td>"+startdate+"</td><td>"+starttime+"</td><td>"+enddate+"</td><td>"+endtime+"</td><td><script>var end = new Date("+enddate+" "+endtime+"); var _second = 1000;var _minute = _second * 60;var _hour = _minute * 60;var _day = _hour * 24;var timer; function showRemaining() {var now = new Date("+startdate+" "+starttime+");var distance = end - now;if (distance < 0) {clearInterval(timer); document.getElementById('count').innerHTML = 'EXPIRED!';return;}var days = Math.floor(distance / _day);document.getElementById('count').innerHTML = days + 'days ';}timer = setInterval(showRemaining, 1000);</script><p id='count'></p></td</tr>");
+      	 $('#myTable').append("<tr><td>"+schedule+"</td><td>"+location+"</td><td>"+description+"</td><td>"+startdate+"</td><td>"+starttime+"</td><td>"+enddate+"</td><td>"+endtime+"</td><td><script>var end = new Date('"+enddate+" "+endtime+"'); var _second = 1000;var _minute = _second * 60;var _hour = _minute * 60;var _day = _hour * 24;var timer; function showRemaining() {var now = new Date('"+startdate+" "+starttime+"');var distance = end - now;if (distance < 0) {clearInterval(timer); document.getElementById('count').innerHTML = 'EXPIRED!';return;}var days = Math.floor(distance / _day);document.getElementById('count').innerHTML = days + 'days ';}timer = setInterval(showRemaining, 1000);</script><p id='count'></p></td</tr>");
       	
       };
 
