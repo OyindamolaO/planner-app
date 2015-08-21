@@ -178,9 +178,14 @@ body{
 }
 #links{
 	position: relative;
+<<<<<<< HEAD
 	left:-30px;
 	top:-10px;
 	background-color: #F8BBD0;
+=======
+	top:40px;
+	background-color: #ff9900;
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
 	width:100%;
 	height: 650px;
 	display: none;
@@ -296,7 +301,11 @@ legend{
 	font-family: Coronetscript, cursive;
 }
 
+<<<<<<< HEAD
 #rbtnc,#nbtnc,#lbtnc,#tbtnc, #ebtnc{
+=======
+#rbtnc,#nbtnc,#lbtnc{
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
 	top:20px;
 	bottom: 0px;
 	position: relative;
@@ -306,10 +315,17 @@ legend{
 	color: white;
 	font-family: "Courier New", Courier, monospace;
 }
+<<<<<<< HEAD
 #rbtnc:hover,#nbtnc:hover,#lbtnc:hover,#tbtnc:hover, #ebtnc:hover{
 	background-color: #CC0000;
 }
 #rbtnd,#nbtns,#lbtns,#tbtns,#ebtns{
+=======
+#rbtnc:hover,#nbtnc:hover,#lbtnc:hover{
+	background-color: #CC0000;
+}
+#rbtnd,#nbtns,#lbtns{
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
 	top:20px;
 	bottom: 0px;
 	position: relative;
@@ -319,6 +335,7 @@ legend{
 	right:-5px;
 	color: white;
 	font-family: "Courier New", Courier, monospace;
+<<<<<<< HEAD
 }
 #rbtnd:hover,#nbtns:hover,#lbtnc:hover,#tbtns:hover{
 	background-color: #00CC00 ;
@@ -326,6 +343,12 @@ legend{
 }
 .container{
 	position: relative;
+=======
+}
+#rbtnd:hover,#nbtns:hover,#lbtnc:hover{
+	background-color: #00CC00 ;
+
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
 }
 .notetab{
 	position: relative;
@@ -377,6 +400,7 @@ ul{
 	margin-right: auto;
 	top:30px;
 }
+<<<<<<< HEAD
 ol li{
 	display: inline;
 }
@@ -390,6 +414,20 @@ ol li{
 	font-weight: none;	
 	font-family: Courier New, monospace;
 	width: 400px;
+=======
+
+#messagesDiv{
+	display: inline;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top:20px;
+	font-weight: none;
+	text-align: justify;
+	font-family: Courier New, monospace;
+	width: 200px;
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
 	font-size: 20px;
 	color: black;
 	padding: 10px;
@@ -399,7 +437,10 @@ ol li{
 	padding: 10px;
 	display: inline-block;
 	position: relative;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
 }
 ol{
 	width: 150px;
@@ -423,11 +464,18 @@ ol{
 	position: relative;
 	width:600px;
 	height: auto;
+<<<<<<< HEAD
 	background-color: #eee;
 	margin-left: auto;
 	margin-right: auto;
 	top:20px;
 	bottom: 10px;
+=======
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	top:5px;
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
 }
 
 input[type="text"]  #notetext{
@@ -447,10 +495,13 @@ input[type="text"]  #notetext{
 	color: black;
 	
 }
+<<<<<<< HEAD
 #newlistitem{
 	text-decoration: none;
 	cursor: pointer;
 }
+=======
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
  
  #ulist{
 	width:600px;
@@ -486,33 +537,53 @@ input[type="text"]  #notetext{
 	margin-left: auto;
 	margin-right: auto;
 	top:30px;
+<<<<<<< HEAD
 	
 	border:black 1px;
 }
 #listtable{
 	width: 800px;
+=======
+	text-align: center;
+	border:black 1px;
+}
+#listtable{
+	width: 500px;
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
 
 }
 
 caption{
+<<<<<<< HEAD
 	font-size: 30px;
 	text-align: center;
 	position: relative;
 	padding:8px;
 	background-color: #F44336;
+=======
+	font-size: 40px;
+	text-align: center;
+	position: relative;
+	padding:10px;
+	background-color: green;
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
 	margin-top: 5px;
 	margin-left: auto;
 	margin-right: auto;
 }
+<<<<<<< HEAD
 caption#testcap{
 	background-color: #F44336;
 }
+=======
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
 table#myTable tr:nth-child(even) {
     background-color: #eee;
 }
 table#myTable tr:nth-child(odd) {
    background-color:#fff;
 }
+<<<<<<< HEAD
 table#lectureTable tr:nth-child(even) {
     background-color: #eee;
 }
@@ -526,13 +597,21 @@ table#testTable tr:nth-child(odd) {
    background-color:#fff;
 }
 table#myTable th, table#lectureTable th, table#testTable th	{
+=======
+table#myTable th	{
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
     background-color: black;
     color: white;
     text-align: center;
 }
 
+<<<<<<< HEAD
 table#myTable td, table#lectureTable td,table#testTable td	{
     font-size:18px;
+=======
+table#myTable td	{
+    font-size:16px;
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
     font-family: Consolas;
     position: relative;
     text-align: center;
@@ -550,6 +629,7 @@ table#listtable th{
     text-align: center;
     font-family: cursive;
     font-size: 30px;
+<<<<<<< HEAD
 }
 #search{
 
@@ -577,4 +657,6 @@ table#listtable th{
 }
 ::-moz-placeholder {
     color:    #999;
+=======
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
 }
