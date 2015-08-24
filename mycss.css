@@ -28,16 +28,16 @@ body{
   width:400px;
   height: 600px;
   transform: translate(-50%, -50%);
-  /*set to a negative number 1/2 of your width*/
+ 
     border: 1px solid #ccc;
     background-size: no-repeat;
     background: 
-    /* top, transparent red */ 
+   
     linear-gradient(
       rgba(0, 0, 0, 0.1), 
       rgba(0, 0, 0, 0.1)
     ),
-    /* bottom, image */
+
     url(images/imgg.jpg)
 }
 .tinted-image .wrap
@@ -117,7 +117,6 @@ body{
 	position: relative;
 
 }
-<<<<<<< HEAD
 .pull-right{
 	padding-right: 15px;
 	marquee-direction:right;
@@ -127,14 +126,6 @@ body{
 	position: relative;
 	padding: 5px;
 	left:-220px;
-=======
-#show{
-	position: relative;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 5px;
-	left: 100px;
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 	margin-bottom: 20px;
 }
 .display{
@@ -190,26 +181,9 @@ body{
 }
 #links{
 	position: relative;
-<<<<<<< HEAD
 	left:-30px;
 	top:-10px;
 	background-color: #FF80AB;
-=======
-<<<<<<< HEAD
-	left:-30px;
-	top:-10px;
-	background-color: #F8BBD0;
-=======
-<<<<<<< HEAD
-	left:-30px;
-	top:-10px;
-	background-color: #F8BBD0;
-=======
-	top:40px;
-	background-color: #ff9900;
->>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 	width:100%;
 	height: 100%;
 	display: none;
@@ -223,12 +197,8 @@ body{
 } 
 
 #links li {     
-<<<<<<< HEAD
     padding: 5px; 
        
-=======
-    padding: 5px;     
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 }
 
 #links li h2{
@@ -268,7 +238,6 @@ body{
     display: block;
 
 }
-<<<<<<< HEAD
 #mainapp{
 	background-color: #eee;
 }
@@ -276,22 +245,12 @@ body{
         color: black;
    		font-size: 18px;
 		font-family: Candara;
-=======
-#links li a { 
-        color: white;
-        display: block;
-        font: bold 120% Arial, Helvetica, sans-serif;
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
         padding: 5px;
         text-decoration: none;
 }
 
 #links li a:hover {
-<<<<<<< HEAD
         background: #F8BBD0;
-=======
-        background: #8B0000;
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 }
 
 .slidedownimg{
@@ -344,7 +303,6 @@ legend{
 	font-family: Coronetscript, cursive;
 }
 
-<<<<<<< HEAD
 #rbtnc,#nbtnc,#lbtnc,#tbtnc, #ebtnc{
 	top:20px;
 	bottom: 0px;
@@ -362,53 +320,12 @@ legend{
 	top:20px;
 	bottom: 0px;
 	position: relative;
-=======
-<<<<<<< HEAD
-#rbtnc,#nbtnc,#lbtnc,#tbtnc, #ebtnc{
-=======
-<<<<<<< HEAD
-#rbtnc,#nbtnc,#lbtnc,#tbtnc, #ebtnc{
-=======
-#rbtnc,#nbtnc,#lbtnc{
->>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
-	top:20px;
-	bottom: 0px;
-	position: relative;
-	float: left;
-	border: white 3px;
-	background-color: red;
-	color: white;
-	font-family: "Courier New", Courier, monospace;
-}
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
-#rbtnc:hover,#nbtnc:hover,#lbtnc:hover,#tbtnc:hover, #ebtnc:hover{
-	background-color: #CC0000;
-}
-#rbtnd,#nbtns,#lbtns,#tbtns,#ebtns{
-<<<<<<< HEAD
-=======
-=======
-#rbtnc:hover,#nbtnc:hover,#lbtnc:hover{
-	background-color: #CC0000;
-}
-#rbtnd,#nbtns,#lbtns{
->>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
-	top:20px;
-	bottom: 0px;
-	position: relative;
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 	border: white 3px;
 	background-color: green;
 	float: right;
 	right:-5px;
 	color: white;
 	font-family: "Courier New", Courier, monospace;
-<<<<<<< HEAD
 }
 #rbtnd:hover,#nbtns:hover,#lbtnc:hover,#tbtns:hover{
 	background-color: #00CC00 ;
@@ -416,28 +333,6 @@ legend{
 }
 .container{
 	position: relative;
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
-}
-#rbtnd:hover,#nbtns:hover,#lbtnc:hover,#tbtns:hover{
-	background-color: #00CC00 ;
-
-}
-.container{
-	position: relative;
-<<<<<<< HEAD
-=======
-=======
-}
-#rbtnd:hover,#nbtns:hover,#lbtnc:hover{
-	background-color: #00CC00 ;
-
->>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 }
 .notetab{
 	position: relative;
@@ -461,31 +356,20 @@ legend{
 }
 .lectures{
 	font-size: 16px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 }
 #lecturehead{
 	color: red;
 	position: relative;
 	left:50px;
 	text-align: center;
-<<<<<<< HEAD
 	font-size: 35px
-=======
-	font-size: 35px;
-=======
-
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 }
 .rel {
 	position: relative;
 }
 .addform{
 	position: relative;
-	background-color: #c0c0c0;
+	background-color: #eee;
 	background-image: none;
 	border: black 2px;
 	top:10px;
@@ -506,13 +390,6 @@ ul{
 	margin-right: auto;
 	top:30px;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 ol li{
 	display: inline;
 }
@@ -526,26 +403,6 @@ ol li{
 	font-weight: none;	
 	font-family: Courier New, monospace;
 	width: 400px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-
-#messagesDiv{
-	display: inline;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	top:20px;
-	font-weight: none;
-	text-align: justify;
-	font-family: Courier New, monospace;
-	width: 200px;
->>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 	font-size: 20px;
 	color: black;
 	padding: 10px;
@@ -555,18 +412,7 @@ ol li{
 	padding: 10px;
 	display: inline-block;
 	position: relative;
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 }
 ol{
 	width: 150px;
@@ -590,30 +436,11 @@ ol{
 	position: relative;
 	width:600px;
 	height: auto;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 	background-color: #eee;
 	margin-left: auto;
 	margin-right: auto;
 	top:20px;
 	bottom: 10px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-	background-color: white;
-	margin-left: auto;
-	margin-right: auto;
-	top:5px;
->>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 }
 
 input[type="text"]  #notetext{
@@ -633,25 +460,10 @@ input[type="text"]  #notetext{
 	color: black;
 	
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 #newlistitem{
 	text-decoration: none;
 	cursor: pointer;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
  
  #ulist{
 	width:600px;
@@ -687,88 +499,20 @@ input[type="text"]  #notetext{
 	margin-left: auto;
 	margin-right: auto;
 	top:30px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 	
 	border:black 1px;
 }
 #listtable{
 	width: 800px;
-<<<<<<< HEAD
 
 }
 
-
-
-=======
-<<<<<<< HEAD
-=======
-=======
-	text-align: center;
-	border:black 1px;
-}
-#listtable{
-	width: 500px;
->>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
-
-}
-
-caption{
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
-	font-size: 30px;
-	text-align: center;
-	position: relative;
-	padding:8px;
-	background-color: #F44336;
-<<<<<<< HEAD
-=======
-=======
-	font-size: 40px;
-	text-align: center;
-	position: relative;
-	padding:10px;
-	background-color: green;
->>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
-	margin-top: 5px;
-	margin-left: auto;
-	margin-right: auto;
-}
-<<<<<<< HEAD
-caption#testcap{
-	background-color: #F44336;
-}
-=======
-<<<<<<< HEAD
-caption#testcap{
-	background-color: #F44336;
-}
-=======
->>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 table#myTable tr:nth-child(even) {
     background-color: #eee;
 }
 table#myTable tr:nth-child(odd) {
    background-color:#fff;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 table#lectureTable tr:nth-child(even) {
     background-color: #eee;
 }
@@ -782,37 +526,13 @@ table#testTable tr:nth-child(odd) {
    background-color:#fff;
 }
 table#myTable th, table#lectureTable th, table#testTable th	{
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-table#myTable th	{
->>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
     background-color: black;
     color: white;
     text-align: center;
 }
 
-<<<<<<< HEAD
 table#myTable td, table#lectureTable td,table#testTable td	{
     font-size:18px;
-=======
-<<<<<<< HEAD
-table#myTable td, table#lectureTable td,table#testTable td	{
-    font-size:18px;
-=======
-<<<<<<< HEAD
-table#myTable td, table#lectureTable td,table#testTable td	{
-    font-size:18px;
-=======
-table#myTable td	{
-    font-size:16px;
->>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
     font-family: Consolas;
     position: relative;
     text-align: center;
@@ -830,13 +550,6 @@ table#listtable th{
     text-align: center;
     font-family: cursive;
     font-size: 30px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 }
 #search{
 
@@ -864,12 +577,4 @@ table#listtable th{
 }
 ::-moz-placeholder {
     color:    #999;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
->>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
->>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 }
