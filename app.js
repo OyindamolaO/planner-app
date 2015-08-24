@@ -1,5 +1,6 @@
 	
 	$(document).ready(function(){
+<<<<<<< HEAD
 	    $("#slidedown").click(function(){
 	        $("#links").show(1000);
 
@@ -8,11 +9,24 @@
 	    $('#show').remove();
 	    });
 	    
+=======
+	    $(".slidedownimg").click(function(){
+	        $("#links").show(1000);
+
+	    });
+	    $(".slidedownimg").click(function(){
+	    $('#show').remove();
+	    });
+>>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 	 });
 
 $(function() {
  $('#backdiv').backstretch([
+<<<<<<< HEAD
       "images/back10.jpg"
+=======
+      "images/back.jpg"
+>>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
     , "images/back1.jpg"
     , "images/back2.jpg"
     ,  "images/back3.png"
@@ -21,8 +35,12 @@ $(function() {
     ,  "images/back6.jpg"
     ,  "images/back7.jpg"
     ,  "images/back8.jpg"
+<<<<<<< HEAD
     , "images/back8.jpg"
     , "images/back.jpg"
+=======
+    , 
+>>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
   ], {duration: 3000, fade: 750});
 
 });
@@ -53,7 +71,11 @@ $(function() {
       	 
 
       	$('<div />').text(text).css({"background-color":color,
+<<<<<<< HEAD
       								"margin-bottom":"20px"}).addClass("important").addClass("imp").addClass("neon").prepend($('<p>').text(title).addClass("titlefont")).css({"width":"250px",
+=======
+      								"margin-bottom":"20px"}).addClass("important").addClass("imp").addClass("neon").prepend($('<p>').text(title).addClass("titlefont")).prepend("<a id='delete' href='#' style='float:right;'><span class='glyphicon glyphicon-trash'></span></a>").css({"width":"250px",
+>>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
       								 "height":"auto","font-family":"Candara"}).fadeIn(999).slideDown(1000).prependTo($('#messagesDiv'));
         $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
         
@@ -71,11 +93,19 @@ $(function() {
 		
 	$('#lbtns').click(function() {
 		var listvar = $('#newlist').val();
+<<<<<<< HEAD
 		
 		 if(listvar == ""){
 	     	alert("All fields must be filled");
 	     }else{
           listdata.push({listvar:listvar});
+=======
+		var licolor = document.getElementById("listColor").value;
+		 if(listvar == ""){
+	     	alert("All fields must be filled");
+	     }else{
+          listdata.push({listvar:listvar,listcolor:licolor});
+>>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
 
           $('#newlist').val('');
 	}
@@ -83,12 +113,18 @@ $(function() {
 
 	listdata.on('child_added', function(snapshot) {
         var msg = snapshot.val();
+<<<<<<< HEAD
         displayChatMessage(msg.listvar);
         
+=======
+        displayChatMessage(msg.listvar,msg.licolor);
+        donelist(msg.listvar)
+>>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
       });
 		
 
 
+<<<<<<< HEAD
 	function displayChatMessage(listvar) {
 
         $('#listtable').append("<tr><td>"+listvar+"</td></tr>");
@@ -96,6 +132,19 @@ $(function() {
       };
 
       
+=======
+	function displayChatMessage(listvar,licolor) {
+        $('#listtable').append("<tr><td><input type= 'checkbox' onclick='donelist()' id ='mycheckbox'></td><td>"+listvar+"</td><td><a id ='del' style='cursor:pointer;'><span class='glyphicon glyphicon-trash'></span></a></td></tr>");
+
+      };
+
+      function donelist(listvar)
+      {
+      		if (mycheckbox.checked) {
+      			listvar.strike();
+      		};
+      }
+>>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
      
       $('#lbtnc').click(function(snapshot){
       	$('#newlist').val('');
@@ -143,7 +192,11 @@ $(function() {
 
       function displayChatMessage(schedule,location,description,startdate, starttime,enddate,endtime) {
 
+<<<<<<< HEAD
       	 $('#myTable').append("<tr><td>"+schedule+"</td><td>"+location+"</td><td>"+description+"</td><td>"+startdate+"</td><td>"+starttime+"</td><td>"+enddate+"</td><td>"+endtime+"</td></tr>");
+=======
+      	 $('#myTable').append("<tr><td>"+schedule+"</td><td>"+location+"</td><td>"+description+"</td><td>"+startdate+"</td><td>"+starttime+"</td><td>"+enddate+"</td><td>"+endtime+"</td><td><a id ='del' style='cursor:pointer;'><span class='glyphicon glyphicon-trash'></span></a></td</tr>");
+>>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
       	
       };
 
@@ -250,4 +303,7 @@ $(function() {
 	   
       });
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9b1d0ac21444c295b853c0683194b2bf252c9573
