@@ -50,7 +50,7 @@ $(function() {
       	 
 
       	$('<div />').text(text).css({"background-color":color,
-      								"margin-bottom":"20px"}).addClass("important").addClass("imp").addClass("neon").prepend("<a id='delete' href='#' style='float:right;' onclick='document.getElememtById().style.display=none'><span class='glyphicon glyphicon-trash'></span></a>").prepend($('<p>').text(title).addClass("titlefont")).css({"width":"250px",
+      								"margin-bottom":"20px"}).addClass("important").addClass("imp").addClass("neon").prepend("<script>function del(){document.getElememtById('delete').style.display='none'}</script><a id='delete' href='#' style='float:right;' onclick='del()'><span class='glyphicon glyphicon-trash'></span></a>").prepend($('<p>').text(title).addClass("titlefont")).css({"width":"250px",
 =======
 
 
