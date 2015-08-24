@@ -189,7 +189,7 @@ $(function() {
 
       function displayChatMessage(day,course,time,venue) {
 
-      	 $('#lectureTable').append("<tr><td>"+day+"</td><td>"+course+"</td><td>"+time+"</td><td>"+venue+"</td><td><a id ='del' style='cursor:pointer;'><span class='glyphicon glyphicon-trash'></span></a></td</tr>");
+      	 $('#lectureTable').append("<tr><td>"+day+"</td><td>"+course+"</td><td>"+time+"</td><td>"+venue+"</td></tr>");
       	
       };
 
@@ -236,7 +236,7 @@ $(function() {
 
       function displayChatMessage(tday,topt,tcourse,ttime,tvenue) {
 
-      	 $('#testTable').append("<tr><td>"+tday+"</td><td>"+tcourse+"</td><td>"+ttime+"</td><td>"+tvenue+"</td><td>"+topt+"</td><td><a id ='del' style='cursor:pointer;'><span class='glyphicon glyphicon-trash'></span></a></td</tr>");
+      	 $('#testTable').append("<tr><td>"+tday+"</td><td>"+tcourse+"</td><td>"+ttime+"</td><td>"+tvenue+"</td><td>"+topt+"</td></tr>");
       	
       };
 
