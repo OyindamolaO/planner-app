@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
 	
 	$(document).ready(function(){
 	    $(".slidedownimg").click(function(){
@@ -24,6 +28,11 @@ $(function() {
   ], {duration: 3000, fade: 750});
 
 });
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
+>>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
 $(function() {
 	var dataRef = new Firebase("https://myschedulerapp.firebaseIO.com");
 	var notesdata = dataRef.child('notes');
@@ -32,6 +41,7 @@ $(function() {
 	     var text = $('#details').val();
 	     var color = document.getElementById("myColor").value;
 
+<<<<<<< HEAD
 	      if(text == "" || title == ""){
 	     	alert("All fields must be filled");
 	     }else{
@@ -41,10 +51,20 @@ $(function() {
 	     }
 	});
 
+=======
+	     notesdata.push({title: title, text: text,color:color});
+	     $('#notetext').val('');
+	     $('#details').val('');
+	});
+>>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
 	notesdata.on('child_added', function(snapshot) {
         var message = snapshot.val();
         displayChatMessage(message.title, message.text, message.color);
       });
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
       
       
       function displayChatMessage(title, text,color) {
@@ -52,6 +72,18 @@ $(function() {
 
       	$('<div />').text(text).css({"background-color":color,
       								"margin-bottom":"20px"}).addClass("important").addClass("imp").addClass("neon").prepend($('<p>').text(title).addClass("titlefont")).prepend("<a id='delete' href='#' style='float:right;'><span class='glyphicon glyphicon-trash'></span></a>").css({"width":"250px",
+<<<<<<< HEAD
+=======
+=======
+
+
+      function displayChatMessage(title, text,color) {
+      	 
+
+      	$('<div/>').text(text).css({"background-color":color,
+      								"margin-bottom":"20px"}).addClass("important").addClass("imp").addClass("neon").prepend($('<p>').text(title).addClass("titlefont")).css({"width":"250px",
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
+>>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
       								 "height":"auto","font-family":"Candara"}).fadeIn(999).slideDown(1000).prependTo($('#messagesDiv'));
         $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
         
@@ -62,11 +94,19 @@ $(function() {
       });
 });
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
+>>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
 $(function() {
 	var dataRef = new Firebase("https://myschedulerapp.firebaseIO.com");
 	var listdata = dataRef.child('list');
 		
+<<<<<<< HEAD
 	$('#lbtns').click(function() {
 		var listvar = $('#newlist').val();
 		var licolor = document.getElementById("listColor").value;
@@ -80,6 +120,25 @@ $(function() {
 });
 
 	listdata.on('child_added', function(snapshot) {
+=======
+<<<<<<< HEAD
+	$('#lbtns').click(function() {
+		var listvar = $('#newlist').val();
+		var licolor = document.getElementById("listColor").value;
+          listdata.push({listvar:listvar,listcolor:licolor});
+=======
+	$('#newlistitem').click(function() {
+		var listvar = $('#newlist').val();
+		var licolor = document.getElementById("listColor").value;
+          listdata.push({messages:listvar,listcolor:licolor});
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
+
+          $('#newlist').val('');
+	});
+
+	listdata.on('child_added', function(snapshot) {
+<<<<<<< HEAD
+>>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
         var msg = snapshot.val();
         displayChatMessage(msg.listvar,msg.licolor);
         donelist(msg.listvar)
@@ -99,6 +158,20 @@ $(function() {
       		};
       }
      
+<<<<<<< HEAD
+=======
+=======
+        var message = snapshot.val();
+        displayListMessage(message.listvar);
+      });
+
+
+	function displayListMessage(listvar) {
+        $('#listtable').append("<tr><td>"+listvar+"</td></tr>");
+      };
+
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
+>>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
       $('#lbtnc').click(function(snapshot){
       	$('#newlist').val('');
 	   
@@ -143,9 +216,20 @@ $(function() {
 
       function displayChatMessage(schedule,location,description,startdate, starttime,enddate,endtime) {
 
+<<<<<<< HEAD
       	 $('#myTable').append("<tr><td>"+schedule+"</td><td>"+location+"</td><td>"+description+"</td><td>"+startdate+"</td><td>"+starttime+"</td><td>"+enddate+"</td><td>"+endtime+"</td><td><a id ='del' style='cursor:pointer;'><span class='glyphicon glyphicon-trash'></span></a></td</tr>");
       	
       };
+=======
+<<<<<<< HEAD
+      	 $('#myTable').append("<tr><td>"+schedule+"</td><td>"+location+"</td><td>"+description+"</td><td>"+startdate+"</td><td>"+starttime+"</td><td>"+enddate+"</td><td>"+endtime+"</td><td><a id ='del' style='cursor:pointer;'><span class='glyphicon glyphicon-trash'></span></a></td</tr>");
+      	
+      };
+=======
+      	 $('#myTable').append("<tr><td>"+schedule+"</td><td>"+location+"</td><td>"+description+"</td><td>"+startdate+"</td><td>"+starttime+"</td><td>"+enddate+"</td><td>"+endtime+"</td></tr>");
+	};
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
+>>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
 
     
       $('#rbtnc').click(function(snapshot){
@@ -158,6 +242,10 @@ $(function() {
 	     $('#entime').val('');
       });
 });
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
 
 $(function() {
 	var dataRef = new Firebase("https://myschedulerapp.firebaseIO.com");
@@ -246,3 +334,8 @@ $(function() {
 	   
       });
 });
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 03d64c4f6b8c7f44fcec5e73870e97e33f6feb52
+>>>>>>> afc83c457ef3b18ad024a420d94fd6a15c2a6de0
