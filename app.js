@@ -114,10 +114,10 @@ $(function() {
 		 var location = $('#location').val();
 		 var description = $('#description').val();
 		 var startdate = $('#statdate').val();
-	     var starttime = $('#stattime').val();
+	     var startdate = $('#stattime').val();
 	     var enddate = $('#endate').val();
 	     var endtime = $('#entime').val();
-	 if(schedule == "" || location == ""|| description == ""|| startdate == ""|| starttime == ""enddate == ""endtime == ""){
+	      if(schedule == "" || location == ""|| description == ""|| startdate == ""|| startdate == ""|| enddate == ""|| endtime == ""){
 	     	alert("All fields must be filled");
 	     }else{
 	     reminderdata.push({schedule:schedule,
@@ -169,9 +169,9 @@ $(function() {
 		 var course = $('#course').val();
 		 var time = $('#time').val();
 		 var venue = $('#venue').val();
-	 if(day == "" || course == ""|| time == ""|| venue == ""){
+	       if(day == "" || course == ""|| time == ""|| venue == ""){
 	     	alert("All fields must be filled");
-	     }else{     
+	     }else{
 	     lecturedata.push({day:day,
 	     					course:course,
 	     					time: time, 
@@ -181,8 +181,8 @@ $(function() {
 	     $('#course').val('');
 	     $('#time').val('');
 	     $('#venue').val('');
-	   
-	     }
+	   }
+   
 	});
 	lecturedata.on('child_added', function(snaps) {
         var lrd = snaps.val();
@@ -215,9 +215,9 @@ $(function() {
 		 var tcourse = $('#tcourse').val();
 		 var ttime = $('#ttime').val();
 		 var tvenue = $('#tvenue').val();
-	     	 if(topt == "" || tday == ""|| tcourse == ""|| ttime == ""|| tvenue == ""){
+	     if(tday == "" || tcourse == ""|| ttime == ""|| tvenue == ""){
 	     	alert("All fields must be filled");
-	     }else{  
+	     }else{
 	     testandexamdata.push({tday:tday,
 	     					topt:topt,
 	     					tcourse:tcourse,
@@ -228,8 +228,8 @@ $(function() {
 	     $('#tcourse').val('');
 	     $('#ttime').val('');
 	     $('#tvenue').val('');
-	   
-	     }
+	   }
+   
 	});
 	testandexamdata.on('child_added', function(snapsh) {
         var tlrd = snapsh.val();
