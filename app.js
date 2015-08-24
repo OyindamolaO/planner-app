@@ -5,10 +5,13 @@ $(function() {
 		 var title = $('#notetext').val();
 	     var text = $('#details').val();
 	     var color = document.getElementById("myColor").value;
-
+	     if(text == "" || title == ""){
+	     	alert("All fields must be filled");
+	     }else{
 	     notesdata.push({title: title, text: text,color:color});
 	     $('#notetext').val('');
 	     $('#details').val('');
+	     }
 	});
 	notesdata.on('child_added', function(snapshot) {
         var message = snapshot.val();
