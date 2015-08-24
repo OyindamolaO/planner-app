@@ -88,8 +88,9 @@ $(function() {
 
 
 	function displayChatMessage(listvar,licolor) {
-        $('#listtable').append("<tr><td><input type= 'checkbox' onclick='donelist()' id ='mycheckbox'></td><td>"+listvar+"</td><td><a id ='del' style='cursor:pointer;'><span class='glyphicon glyphicon-trash'></span></a></td></tr>");
-
+		var i = 0;
+        $('#listtable').append("<tr><td><input type= 'checkbox' onclick='donelist()' id ='mycheckbox'></td><td><small id='text'"+i+">"+listvar+"</small></td><td><a id ='del' style='cursor:pointer;'><span class='glyphicon glyphicon-trash'></span></a></td></tr>");
+++i;
       };
 
       function donelist(listvar)
