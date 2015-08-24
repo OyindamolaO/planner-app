@@ -89,7 +89,7 @@ $(function() {
 
 	function displayChatMessage(listvar,licolor) {
 		var i = 0;
-        $('#listtable').append("<script>function canci(){document.getElementById('text0').style.text-decoration='line-through';}</script><tr><td><input type= 'checkbox' onchange='canci()' onclick='donelist()' id ='mycheckbox'></td><td><small id='text"+i+"'>"+listvar+"</small></td><td><a id ='del' style='cursor:pointer;'><span class='glyphicon glyphicon-trash'></span></a></td></tr>");
+        $('#listtable').append("<tr><td><input type= 'checkbox' onchange='canci()' onclick='donelist()' id ='mycheckbox'></td><td><small id='text"+i+"'>"+listvar+"</small></td><td><a id ='del' style='cursor:pointer;'><span class='glyphicon glyphicon-trash'></span></a></td></tr>");
 ++i;
       };
 
