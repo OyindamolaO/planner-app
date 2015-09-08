@@ -32,6 +32,7 @@
 <script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js"></script>
 
 
+
 </head>
 <body>
 	<div id="backdiv" data-role="page">
@@ -47,20 +48,45 @@
 
 					 	</div>
 				
-			
+
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+	<div id="backdiv" data-role="page">
+			<div class="tinted-image">
+				<div class="wrap">
+					<img src="images/sch.jpg" width="100px" height="100px">
+					<h1 class="neon">N-Planner</h1>
+				<a href="#mainapp" data-transition="slidefade" id ="cus" class="btn btn-lg">
+					<button>EXPLORE <span class="glyphicon glyphicon-arrow-right"></span></button>
+				</a>
+
+			 </div>
+
 		</div>
+	
 	</div>
 
 	<div data-role="page" id="mainapp">
 		
 		<div class="header">
 			<ul>
+
 			
 				<li class="pull-left" ><img src="images/menu.png" width="30px" height="30px" id = "slidedown" class ="slidedownimg" ></li>
 				<a data-toggle="tooltip" title="go to facebook" href="https://www.facebook.com/hoindermoreler.hormoretuyi" target="_blank"><li class="pull-right"><img src="images/facebook.jpg" width="30px" height="25px" class ="slidedownimg"></li></a>
 				<a data-toggle="tooltip" title="go to twitter" href="https://twitter.com/OMOTUYIO" target="_blank"><li class="pull-right"><img src="images/twitter.png" width="30px" height="25px"  class ="slidedownimg"></li></a>
 				<a data-toggle="tooltip" title="send an email" href="mailto:damola.omotuyi@gmail.com?" target="_top"><li class="pull-right"><img src="images/email.png" width="30px" height="25px"  class ="slidedownimg"></a></li>
 		
+
+				<li class="pull-left" ><img src="images/menu.png" width="30px" height="30px" id = "slidedown" class ="slidedownimg" ></li>
+				<a href="https://www.facebook.com/hoindermoreler.hormoretuyi" target="_blank"><li class="pull-right"><img src="images/facebook.jpg" width="30px" height="25px" class ="slidedownimg"></li></a>
+				<a href="https://twitter.com/OMOTUYIO" target="_blank"><li class="pull-right"><img src="images/twitter.png" width="30px" height="25px"  class ="slidedownimg"></li></a>
+				<a href="mailto:damola.omotuyi@gmail.com?" target="_top"><li class="pull-right"><img src="images/email.png" width="30px" height="25px"  class ="slidedownimg"></a></li>
+				
+
 
 			</ul>
 		</div>
@@ -99,6 +125,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4">
+
 							<div class="display green"><p><marquee behavior = "scroll" direction = "up" onmouseover="this.stop();" onmouseout="this.start();" > N-Planner is a planning aid that helps you to organize your thoughts and words into notes!</marquee></p></div>
 						</div>
 						<div class="col-md-4">
@@ -106,6 +133,15 @@
 						</div>
 						<div class="col-md-4">
 							<div class="display red"><p><marquee behavior = "scroll" direction = "up" onmouseover="this.stop();" onmouseout="this.start();" >Pen your thoughts down and find it easy to connect!</marquee></p></div>
+
+							<div class="display green"><p>N-Planner is a planning aid that helps you to organize your thoughts and words into notes!</p></div>
+						</div>
+						<div class="col-md-4">
+							<div class="display blue"><p>Prioritize Tasks, Be the Master Planner of Your Tasks</p></div>
+						</div>
+						<div class="col-md-4">
+							<div class="display red "><p>Pen your thoughts down and find it easy to connect!</p></div>
+
 						</div>
 					</div>
 				</div>
@@ -114,12 +150,21 @@
 					<div class="row">
 						<div class="col-md-4">
 							<div class="display orange"><p>Students, Come on and get your lecture time table ready. Here you go!</p></div>
+
 						</div>
 						<div class="col-md-4">
 							<div class="display pink"  ><p>Test and Examinations knocks at the door! How will I get myself ready. Friend, pen down your timetable and get to work!</p></div>
 						</div>
 						<div class="col-md-4">
 							<div class="display yellow" ><p>Welcome!</p></div>
+
+						</div>
+						<div class="col-md-4">
+							<div class="display pink"><p>Test and Examinations knocks at the door! How will I get myself ready. Friend, pen down your timetable and get to work!</p></div>
+						</div>
+						<div class="col-md-4">
+							<div class="display yellow"><p>Welcome!</p></div>
+
 						</div>
 					</div>
 				</div>
@@ -137,11 +182,18 @@
 												<div id="add" class="tab-pane fade in active">						   
 													<form class="addform">
 														<input type="text" placeholder="Title" class="noteinput" id = "notetext" required>
+
 														<textarea placeholder="Details" id = "details"></textarea>
 													
 														<div class = "colormi">Background Color: <input type="color" id="myColor" value="#ff0080">
 														</div>
 														<br/><br/><br/><br/>
+
+														<textarea placeholder= "Details" class="form-control" rows="5" id ="details" >
+														</textarea>
+														<div class = "colormi">Background Color: <input type="color" id="myColor" value="#ff0080">
+														</div>
+
 														<div class="row">
 															<div class="col-xs-12">
 																<a href="#" id = "nbtnc" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
@@ -164,6 +216,7 @@
 														</ul>
 												
 													</div>
+
 											
 												
 					   							<div class="row">
@@ -174,6 +227,17 @@
 										  			</div>
 										  			<div class="col-xs-6">
 										  			<a href="#" id = "lbtns" class="ui-btn ui-corner-all"  style= "float:left;"> <span class="glyphicon glyphicon-ok"></span>&nbsp; &nbsp;Save
+
+													<br/>
+												
+					   							<div class="row">
+													<div class="col-xs-6">
+														<a href="#" id = "lbtnc" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
+														</a>								
+										  			</div>
+										  			<div class="col-xs-6">
+										  			<a href="#" id = "lbtns" class="ui-btn ui-corner-all"> <span class="glyphicon glyphicon-ok"></span>&nbsp; &nbsp;Save
+
 										  			</a>					
 													</div>
 												</div>
@@ -233,7 +297,12 @@
 									                <div class="row">
 									                    <div class="col-xs-12">
 									                    	<label>Description</label>
+
 									                    	<textarea placeholder="Description" id = "description"></textarea>
+
+									                     		<textarea rows="4" cols="50" name="description"  id="description" required>
+																</textarea>
+
 									                    </div>
 									                </div>    
 									             	
@@ -257,6 +326,7 @@
 									                        	  <input type="time" id ="entime" name="endtime" size="20">
 									                	  </div>
 									               </div>
+
 													
 									   				<div class="row">
 
@@ -377,6 +447,160 @@
 												<a href="#" id = "tbtnc" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
 												</a>		  			
 												<a href="#" id = "tbtns" class="ui-btn ui-corner-all"> <span class="glyphicon glyphicon-ok"></span>&nbsp; &nbsp;Save
+
+
+									   				<div class="row">
+														<div class="col-xs-6">
+															<a href="#" id = "rbtnc" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
+															</a>
+																
+												  		</div>
+												  		<div class="col-xs-6">
+												  			<a href="#" id = "rbtnd" class="ui-btn ui-corner-all"> <span class="glyphicon glyphicon-ok"></span>&nbsp; &nbsp;Done
+												  			</a>
+																			
+														</div>
+													</div>
+											</fieldset>
+										</form>			
+									</div>
+								</div>
+		   
+					   			<div id="viewreminder" class="tab-pane fade">
+								    <div class="container-fluid">
+										<table class="table" id = "myTable">
+											 <caption class="threed" id = "lecturehead">Schedules<br/></caption>
+												 <thead>
+													<tr>
+													<th>Schedule</th>
+													<th>Location</th>
+													<th>Description</th>
+													<th>Start Date</th>
+													<th>Start Time</th>
+													<th>Start Date</th>
+													<th>End Date</th>
+													
+												</tr>
+												</thead>
+												<tbody>
+													
+												</tbody>
+										</table>
+									</div>
+		    					</div>
+		   		
+								<div id="viewtimetable" class="tab-pane fade">
+									<div class="container-fluid">									
+										<table class="table" id = "lectureTable">
+											 <caption class="threed" id = "lecturehead">Lecture Timetable</caption>
+											
+												 <thead>
+													<tr>
+													<th>Day</th>
+													<th>Courses</th>
+													<th>Time</th>
+													<th>Venue</th>
+												
+												</tr>
+												</thead>
+												<tbody>
+													
+												</tbody>
+										</table>
+  
+									</div>
+									<br/><br/>
+									<div class="container-fluid">
+									
+										<table class="table" id = "testTable">
+											 <caption class="threed" id = "lecturehead">Test/Exam Timetable</caption>
+										
+												 <thead>
+													<tr>
+													<th>Day</th>
+													<th>Courses</th>
+													<th>Time</th>
+													<th>Venue</th>
+													<th>Type</th>
+													
+												</tr>
+												</thead>
+												<tbody>
+													
+												</tbody>
+										</table>
+  
+									</div>
+								</div>
+							    <div id="lecture" class="tab-pane fade">
+								    <div class="container-fluid" >
+								   		<h2 class="threed" id = "lecturehead">Lecture Timetable </h2>
+									    <div class="lecturetab">
+											<ul>
+												<div class="col-xs-6">
+												<li class="lectures" >Day:<input type="date" placeholder="Day" id = "day"></li>
+												</div>
+												<div class="col-xs-6">
+												<li class="lectures" >Time:<input type="time" id = "time"></li>
+												</div>
+											
+												<div class="col-xs-6">
+												<li class="lectures" >Venue:<textarea placeholder="venue" id = "venue"></textarea></li>
+												</div>
+												<div class="col-xs-6">
+												<li class="lectures">Course(s):<textarea placeholder="course(s)" id = "course"></textarea></li>
+												</div>
+											
+											</ul>
+									
+										<div class="row">
+											<div class="col-xs-12">
+												<a href="#" id = "tbtnc" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
+												</a>		  			
+												<a href="#" id = "tbtns" class="ui-btn ui-corner-all"> <span class="glyphicon glyphicon-ok"></span>&nbsp; &nbsp;Save
+												</a>				
+											</div>
+										</div>
+									</div>
+									
+									</div>
+									
+							    </div>
+
+							    <div id="exam" class="tab-pane fade">
+								    <div class="container-fluid">
+											    <div class="container-fluid" >
+											    <h2 class="threed" id = "lecturehead">Test/Exam Timetable </h2>
+									    <div class="lecturetab">
+											<ul>
+												<div class="col-xs-6">
+												Select Type:<select id ="topt">
+															  <option value="Examination" id = "examoption">Examination</option>
+															  <option value="Test" id = "testoption">Test</option>
+															</select>
+												</div>
+												<div class="col-xs-6">
+												<li class="lectures" >Day:<input type="date" placeholder="Day" id = "tday"></li>
+												</div>
+												<div class="col-xs-6">
+												<li class="lectures" >Time:<input type="time" id = "ttime"></li>
+												</div>
+											
+												<div class="col-xs-6">
+												<li class="lectures" >Venue:<textarea placeholder="venue" id = "tvenue"></textarea></li>
+												</div>
+												<div class="col-xs-6">
+												<li class="lectures">Course(s):<textarea placeholder="course(s)" id = "tcourse"></textarea></li>
+												</div>
+											
+											</ul>
+									
+										<div class="row">
+											<div class="col-xs-12">
+												<a href="#" id = "ebtnc" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
+												</a>		  			
+												<a href="#" id = "ebtns" class="ui-btn ui-corner-all"> <span class="glyphicon glyphicon-ok"></span>&nbsp; &nbsp;Save
+
 												</a>				
 											</div>
 										</div>
@@ -441,5 +665,17 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
 });
 </script>
+															
+								    </div>
+							    </div>
+							   
+							  </div>
+						</div>
+					</div>
+				</div>				
+			</div>		
+		</div>		
+	<script type="text/javascript" src="app.js"></script>
+
 </body>
 </html>

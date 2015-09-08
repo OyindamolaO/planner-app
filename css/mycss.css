@@ -1,0 +1,451 @@
+body{
+	position: relative;
+	min-width: 100%;
+	max-height: 100%;
+	background-color: green;
+}
+#backdiv
+{
+	position: absolute;
+	background-color: red;
+	width: 100%;
+	height:100%;
+	padding: 0px;
+	margin: 0px;
+}
+.tinted-image {
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+  top: 50%;
+  left: 50%;
+  width:400px;
+  height: 600px;
+  transform: translate(-50%, -50%);
+  /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-size: no-repeat;
+    background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.1), 
+      rgba(0, 0, 0, 0.1)
+    ),
+    /* bottom, image */
+    url(images/imgg.jpg)
+}
+.tinted-image .wrap
+{
+	margin: auto;
+	position: relative;
+	
+ top: 50%;
+  left: 50%;
+  width:400px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.tinted-image .wrap img{
+
+	position: relative;
+	bottom:-40px;
+	width:150px;
+	height: 150px;
+}
+.tinted-image .wrap h1{
+	color: white;
+	position: relative;
+	font-size: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color:black;
+	opacity:0.5;
+	text-align: center;
+	clear: both;
+}
+#cus 
+{
+	clear:both;
+	color: red;
+	position: relative;
+	border: white 2px;
+	background-color:black;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	opacity:0.9;
+	top:60px;
+	font-size: 20px;
+	font-family: serif;
+	text-align: right;
+	bottom:2px;
+}
+#cus: hover{
+	background-color: red;
+
+}
+.header{
+	position: relative;
+	width: 100%;
+	height:50px;
+	background-color: green;
+
+}
+.header ul li{
+	list-style: none;
+	padding-top: 10px;
+	padding-left: 0px;
+	position: relative;
+
+}
+.container-fluid{
+	width: 100%;
+	height: 100%;
+}
+#links{
+	position: relative;
+	top:40px;
+	background-color: #ff9900;
+	width:100%;
+	height: 650px;
+	display: none;
+	bottom:10px;
+}
+
+#links ul {
+		position: relative;
+        list-style-type: none;
+   
+} 
+
+#links li {     
+        padding: 5px;     
+}
+
+#links li h2{
+        color:#CC0033;
+        font-size: 20px;
+        
+}
+.masking{
+    color: #FFFFFF;
+    -webkit-mask-box-image: url(mask.png) 0 0 repeat;
+}
+.neon {
+    color: #D0F8FF;
+    text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
+             0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+             0 0 40px #A5F1FF;
+}
+.threed {
+    color: #CCCCCC;
+    text-shadow: 0 1px 0 #999999, 0 2px 0 #888888,
+             0 3px 0 #777777, 0 4px 0 #666666,
+             0 5px 0 #555555, 0 6px 0 #444444,
+             0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4),
+             0 9px 10px rgba(0, 0, 0, 0.2);
+}
+.titlefont{
+	position: relative;
+	padding-bottom: 10px;
+	color:green;
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-size: 30px;
+	font-family: Papyrus;
+	content: '';
+    clear: right;
+    display: block;
+
+}
+#links li a { 
+        color: #8B0000;
+        display: block;
+        font: bold 120% Arial, Helvetica, sans-serif;
+        padding: 5px;
+        text-decoration: none;
+}
+
+#links li a:hover {
+        background: #ffffcc;
+}
+
+.slidedownimg{
+	cursor: pointer;
+}
+.displaybody{
+	display: block;
+	position: relative;
+	height: auto;
+	width:100%;
+
+}
+form{
+	position: relative;
+	width:400px;
+	height: auto;
+	padding: 50px;
+	top:40px;
+	margin-left: auto;
+	margin-right: auto;
+	bottom:10px;
+	background-size: cover;
+	background: url(images/formbg.jpg) repeat top left;
+	border: black 2px;
+	border-radius: 10px;
+
+}
+
+input{
+	position: relative;
+	width:70px;
+	height:20px;
+}
+.remind{
+	position: relative;
+	height: 700px;
+	float: left;
+	left:-20px;
+	width:100%;
+	right:10px;
+}
+
+label{
+	color: #339933;
+	
+}
+legend{
+	text-align: right;
+	font-size: 80px;
+	font-family: Coronetscript, cursive;
+}
+
+#rbtnc,#nbtnc,#lbtnc{
+	top:20px;
+	bottom: 0px;
+	position: relative;
+	float: left;
+	border: white 3px;
+	background-color: red;
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+}
+#rbtnc:hover,#nbtnc:hover,#lbtnc:hover{
+	background-color: #CC0000;
+}
+#rbtnd,#nbtns,#lbtns{
+	top:20px;
+	bottom: 0px;
+	position: relative;
+	border: white 3px;
+	background-color: green;
+	float: right;
+	right:-5px;
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+}
+#rbtnd:hover,#nbtns:hover,#lbtnc:hover{
+	background-color: #00CC00 ;
+
+}
+.notetab{
+	position: relative;
+	width:700px;
+	height: auto;
+	padding: 10px;
+	top:40px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #eee;
+
+}
+.rel {
+	position: relative;
+}
+.addform{
+	position: relative;
+	background-color: #eee;
+	background-image: none;
+	border: black 2px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	top:10px;
+	left:0px;
+	padding: 20px;
+	width:600px;
+	bottom: 30px;
+}
+
+ul{
+	list-style: none;
+
+}
+.init{
+	background-color: green;
+	width:10px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	top:30px;
+}
+
+#messagesDiv{
+	display: inline;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top:20px;
+	font-weight: none;
+	text-align: justify;
+	font-family: Courier New, monospace;
+	width: 200px;
+	font-size: 20px;
+	color: black;
+	padding: 10px;
+}
+.important{
+	border-radius: 20px;
+	padding: 10px;
+	display: inline-block;
+	position: relative;
+}
+ol{
+	width: 150px;
+
+}
+
+ 
+.imp:hover{
+	-moz-box-shadow: 0 0 10px #ccc; 
+	-webkit-box-shadow: 0 0 10px #ccc; 
+	box-shadow: 0 0 10px #ccc; 
+	background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    )
+}
+#initlist
+{
+	position: relative;
+	width:600px;
+	height: auto;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	top:5px;
+}
+
+input[type="text"]  #notetext{
+	font-size: 50px;
+}
+
+
+.ilist{
+	display: inline-block;
+	position: relative;
+	padding: 20px;
+
+}
+#newlist{
+	width:300px;
+	border: none;
+	color: black;
+	
+}
+ 
+ #ulist{
+	width:600px;
+	height: auto;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.colormi{
+	position: relative;
+	width:120px;
+	height: 50px;
+	top:10px;
+	margin-bottom: 5px;
+	color:blue;
+	float: right;
+	font-size: 14px;
+
+}
+#lcolor{
+	position: relative;
+	right:15px;
+}
+#countdown{
+
+	background-color: green;
+}
+
+#myTable,#listtable{
+	width:100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top:30px;
+	text-align: center;
+	border:black 1px;
+}
+#listtable{
+	width: 500px;
+
+}
+
+caption{
+	font-size: 40px;
+	text-align: center;
+	position: relative;
+	padding:10px;
+	background-color: green;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table#myTable tr:nth-child(even) {
+    background-color: #eee;
+}
+table#myTable tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#myTable th	{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+table#myTable td	{
+    font-size:16px;
+    font-family: Consolas;
+    position: relative;
+    text-align: center;
+
+}
+table#listtable td{
+	font-size:16px;
+    font-family: Consolas;
+    position: relative;
+    text-align: center;
+}
+table#listtable th{
+	background-color: black;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+}
+#search{
+
+	width:500px;
+	position: relative;
+}
+.up li{
+	padding: 2px;
+	position: relative;
+	top:0px;
+}
