@@ -4,7 +4,6 @@
 <head>
 <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
 <meta charset="utf-8">
-<meta charset=utf-8 />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Planner App</title>
 <!--css styles-->
@@ -32,34 +31,36 @@
 
 <script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js"></script>
 
-<script type="text/javascript">
 
-</script>
 </head>
 <body>
 	<div id="backdiv" data-role="page">
-			<div class="tinted-image">
-				<div class="wrap">
-					<img src="images/sch.jpg" width="100px" height="100px">
-					<h1 class="neon">N-Planner</h1>
-				<a href="#mainapp" data-transition="slidefade" id ="cus" class="btn btn-lg">
-					<button>EXPLORE <span class="glyphicon glyphicon-arrow-right"></span></button>
-				</a>
+			
+				
+					<div class="tinted-image">
+						<div class="wrap">
+								<img src="images/sch.jpg" width="100px" height="100px">
+								<h1 class="neon">N-Planner</h1>
+							<a href="#mainapp" data-transition="slidefade" id ="cus" class="btn btn-lg">
+								<button>EXPLORE <span class="glyphicon glyphicon-arrow-right"></span></button>
+							</a>
 
-			 </div>
+					 	</div>
+				
+			
 		</div>
-	
 	</div>
 
 	<div data-role="page" id="mainapp">
 		
 		<div class="header">
 			<ul>
+			
 				<li class="pull-left" ><img src="images/menu.png" width="30px" height="30px" id = "slidedown" class ="slidedownimg" ></li>
-				<a href="https://www.facebook.com/hoindermoreler.hormoretuyi" target="_blank"><li class="pull-right"><img src="images/facebook.jpg" width="30px" height="25px" class ="slidedownimg"></li></a>
-				<a href="https://twitter.com/OMOTUYIO" target="_blank"><li class="pull-right"><img src="images/twitter.png" width="30px" height="25px"  class ="slidedownimg"></li></a>
-				<a href="mailto:damola.omotuyi@gmail.com?" target="_top"><li class="pull-right"><img src="images/email.png" width="30px" height="25px"  class ="slidedownimg"></a></li>
-				
+				<a data-toggle="tooltip" title="go to facebook" href="https://www.facebook.com/hoindermoreler.hormoretuyi" target="_blank"><li class="pull-right"><img src="images/facebook.jpg" width="30px" height="25px" class ="slidedownimg"></li></a>
+				<a data-toggle="tooltip" title="go to twitter" href="https://twitter.com/OMOTUYIO" target="_blank"><li class="pull-right"><img src="images/twitter.png" width="30px" height="25px"  class ="slidedownimg"></li></a>
+				<a data-toggle="tooltip" title="send an email" href="mailto:damola.omotuyi@gmail.com?" target="_top"><li class="pull-right"><img src="images/email.png" width="30px" height="25px"  class ="slidedownimg"></a></li>
+		
 
 			</ul>
 		</div>
@@ -98,13 +99,13 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4">
-							<div class="display green"><p>N-Planner is a planning aid that helps you to organize your thoughts and words into notes!</p></div>
+							<div class="display green"><p><marquee behavior = "scroll" direction = "up" onmouseover="this.stop();" onmouseout="this.start();" > N-Planner is a planning aid that helps you to organize your thoughts and words into notes!</marquee></p></div>
 						</div>
 						<div class="col-md-4">
-							<div class="display blue"><p>Prioritize Tasks, Be the Master Planner of Your Tasks</p></div>
+							<div class="display blue"><p><marquee behavior = "scroll" direction = "left" onmouseover="this.stop();" onmouseout="this.start();" >Prioritize Tasks, Be the Master Planner of Your Tasks</marquee></p></div>
 						</div>
 						<div class="col-md-4">
-							<div class="display red "><p>Pen your thoughts down and find it easy to connect!</p></div>
+							<div class="display red"><p><marquee behavior = "scroll" direction = "up" onmouseover="this.stop();" onmouseout="this.start();" >Pen your thoughts down and find it easy to connect!</marquee></p></div>
 						</div>
 					</div>
 				</div>
@@ -115,10 +116,10 @@
 							<div class="display orange"><p>Students, Come on and get your lecture time table ready. Here you go!</p></div>
 						</div>
 						<div class="col-md-4">
-							<div class="display pink"><p>Test and Examinations knocks at the door! How will I get myself ready. Friend, pen down your timetable and get to work!</p></div>
+							<div class="display pink"  ><p>Test and Examinations knocks at the door! How will I get myself ready. Friend, pen down your timetable and get to work!</p></div>
 						</div>
 						<div class="col-md-4">
-							<div class="display yellow"><p>Welcome!</p></div>
+							<div class="display yellow" ><p>Welcome!</p></div>
 						</div>
 					</div>
 				</div>
@@ -136,10 +137,11 @@
 												<div id="add" class="tab-pane fade in active">						   
 													<form class="addform">
 														<input type="text" placeholder="Title" class="noteinput" id = "notetext" required>
-														<textarea placeholder= "Details" class="form-control" rows="5" id ="details" >
-														</textarea>
+														<textarea placeholder="Details" id = "details"></textarea>
+													
 														<div class = "colormi">Background Color: <input type="color" id="myColor" value="#ff0080">
 														</div>
+														<br/><br/><br/><br/>
 														<div class="row">
 															<div class="col-xs-12">
 																<a href="#" id = "nbtnc" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
@@ -162,15 +164,16 @@
 														</ul>
 												
 													</div>
-													<br/>
+											
 												
 					   							<div class="row">
+			
 													<div class="col-xs-6">
-														<a href="#" id = "lbtnc" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
+														<a href="#" id = "lbtnc" style= "float:right;" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
 														</a>								
 										  			</div>
 										  			<div class="col-xs-6">
-										  			<a href="#" id = "lbtns" class="ui-btn ui-corner-all"> <span class="glyphicon glyphicon-ok"></span>&nbsp; &nbsp;Save
+										  			<a href="#" id = "lbtns" class="ui-btn ui-corner-all"  style= "float:left;"> <span class="glyphicon glyphicon-ok"></span>&nbsp; &nbsp;Save
 										  			</a>					
 													</div>
 												</div>
@@ -230,8 +233,7 @@
 									                <div class="row">
 									                    <div class="col-xs-12">
 									                    	<label>Description</label>
-									                     		<textarea rows="4" cols="50" name="description"  id="description" required>
-																</textarea>
+									                    	<textarea placeholder="Description" id = "description"></textarea>
 									                    </div>
 									                </div>    
 									             	
@@ -255,8 +257,9 @@
 									                        	  <input type="time" id ="entime" name="endtime" size="20">
 									                	  </div>
 									               </div>
-
+													
 									   				<div class="row">
+
 														<div class="col-xs-6">
 															<a href="#" id = "rbtnc" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
 															</a>
@@ -324,7 +327,7 @@
 										
 												 <thead>
 													<tr>
-													<th>Day</th>
+													<th>Date</th>
 													<th>Courses</th>
 													<th>Time</th>
 													<th>Venue</th>
@@ -345,7 +348,15 @@
 									    <div class="lecturetab">
 											<ul>
 												<div class="col-xs-6">
-												<li class="lectures" >Day:<input type="date" placeholder="Day" id = "day"></li>
+												<li class="lectures" > Day:<select id ="lopt">
+															  <option value="Monday" >Monday</option>
+															  <option value="Tuesday" >Tuesday</option>
+															  <option value="Tuesday" >Wednesday</option>
+															  <option value="Tuesday" >Thursday</option>
+															  <option value="Tuesday" >Friday</option>
+															  <option value="Tuesday" >Saturday</option>
+															  <option value="Tuesday" >Sunday</option>
+															</select></li>
 												</div>
 												<div class="col-xs-6">
 												<li class="lectures" >Time:<input type="time" id = "time"></li>
@@ -359,9 +370,10 @@
 												</div>
 											
 											</ul>
-									
+									<br/><br/><br/><br/>
 										<div class="row">
 											<div class="col-xs-12">
+											
 												<a href="#" id = "tbtnc" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
 												</a>		  			
 												<a href="#" id = "tbtns" class="ui-btn ui-corner-all"> <span class="glyphicon glyphicon-ok"></span>&nbsp; &nbsp;Save
@@ -387,7 +399,7 @@
 															</select>
 												</div>
 												<div class="col-xs-6">
-												<li class="lectures" >Day:<input type="date" placeholder="Day" id = "tday"></li>
+												<li class="lectures" >Date:<input type="date" placeholder="Day" id = "tday"></li>
 												</div>
 												<div class="col-xs-6">
 												<li class="lectures" >Time:<input type="time" id = "ttime"></li>
@@ -424,6 +436,10 @@
 			</div>		
 		</div>		
 	<script type="text/javascript" src="app.js"></script>
-
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
 </body>
 </html>
