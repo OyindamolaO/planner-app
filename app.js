@@ -154,9 +154,7 @@ $(function() {
 	     var startdate = $('#stattime').val();
 	     var enddate = $('#endate').val();
 	     var endtime = $('#entime').val();
-	      if(schedule == "" || location == ""|| description == ""|| startdate == ""|| startdate == ""|| enddate == ""|| endtime == ""){
-	     	alert("All fields must be filled");
-	     }else{
+
 	     reminderdata.push({schedule:schedule,
 	     					location:location,
 	     					description:description,
@@ -173,7 +171,7 @@ $(function() {
 	     $('#endate').val('');
 	     $('#entime').val('');
 	     
-	     }
+	     
 	});
 	reminderdata.on('child_added', function(snapshot) {
         var rd = snapshot.val();
