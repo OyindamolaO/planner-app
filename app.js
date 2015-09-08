@@ -203,7 +203,7 @@ $(function() {
 	var dataRef = new Firebase("https://myschedulerapp.firebaseIO.com");
 	var lecturedata = dataRef.child('lecturetimetable')
 	$('#tbtns').click(function() {
-		 var lopt =document.getElementById('.lopt').value;
+		 var lopt =document.getElementById('#lopt').value;
 		 var course = $('#course').val();
 		 var time = $('#time').val();
 		 var venue = $('#venue').val();
@@ -215,7 +215,7 @@ $(function() {
 	     					time: time, 
 		     				venue: venue});
 
-	     $('.lopt').val('');
+	     $('#lopt').val('');
 	     $('#course').val('');
 	     $('#time').val('');
 	     $('#venue').val('');
