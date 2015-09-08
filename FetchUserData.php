@@ -27,4 +27,8 @@ echo json_encode($user);
 mysqli_stmt_close($statement);
 
 mysqli_close($con);
+
 ?> 
+
+?>
+

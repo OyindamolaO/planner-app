@@ -1,19 +1,12 @@
 	
-<<<<<<< HEAD
 	$(document).ready(function(){		 
 	    $("#slidedown").click(function(){
 	        $("#links").show(1000);	       
-=======
-	$(document).ready(function(){
-	    $("#slidedown").click(function(){
-	        $("#links").show(1000);
->>>>>>> 748971b362abbad0f1f47a5891e8455c9857c4a3
 
 	    });
 	    $("#slidedown").click(function(){
 	    $('#show').remove();
 	    });
-<<<<<<< HEAD
 	    	          	    
 	 });
 $(document).ready(function(){
@@ -57,15 +50,6 @@ $(function() {
  $('#backdiv').backstretch([
     
      "images/back1.jpg"
-=======
-	    
-	 });
-
-$(function() {
- $('#backdiv').backstretch([
-      "images/back10.jpg"
-    , "images/back1.jpg"
->>>>>>> 748971b362abbad0f1f47a5891e8455c9857c4a3
     , "images/back2.jpg"
     ,  "images/back3.png"
     ,  "images/back4.jpg"
@@ -86,7 +70,6 @@ $(function() {
 	     var text = $('#details').val();
 	     var color = document.getElementById("myColor").value;
 
-<<<<<<< HEAD
 	      if( title == "" || text == "" )
 	      {
 	     	alert("All fields must be filled");
@@ -96,14 +79,6 @@ $(function() {
 		     notesdata.push({title: title, text: text,color:color});
 		     $('#notetext').val('');
 		     $('#details').val('');
-=======
-	      if(text == "" || title == ""){
-	     	alert("All fields must be filled");
-	     }else{
-	     notesdata.push({title: title, text: text,color:color});
-	     $('#notetext').val('');
-	     $('#details').val('');
->>>>>>> 748971b362abbad0f1f47a5891e8455c9857c4a3
 	     }
 	});
 
@@ -220,18 +195,13 @@ $(function() {
 	     $('#stattime').val('');
 	     $('#endate').val('');
 	     $('#entime').val('');
-<<<<<<< HEAD
 	      });
-=======
-      });
->>>>>>> 748971b362abbad0f1f47a5891e8455c9857c4a3
 });
 
 $(function() {
 	var dataRef = new Firebase("https://myschedulerapp.firebaseIO.com");
 	var lecturedata = dataRef.child('lecturetimetable')
 	$('#tbtns').click(function() {
-<<<<<<< HEAD
 		 var lopt =document.getElementById('.lopt').value;
 		 var course = $('#course').val();
 		 var time = $('#time').val();
@@ -240,25 +210,11 @@ $(function() {
 	     	alert("All fields must be filled");
 	     }else{
 	     lecturedata.push({lopt:lopt,
-=======
-		 var day = $('#day').val();
-		 var course = $('#course').val();
-		 var time = $('#time').val();
-		 var venue = $('#venue').val();
-	       if(day == "" || course == ""|| time == ""|| venue == ""){
-	     	alert("All fields must be filled");
-	     }else{
-	     lecturedata.push({day:day,
->>>>>>> 748971b362abbad0f1f47a5891e8455c9857c4a3
 	     					course:course,
 	     					time: time, 
 		     				venue: venue});
 
-<<<<<<< HEAD
 	     $('.lopt').val('');
-=======
-	     $('#day').val('');
->>>>>>> 748971b362abbad0f1f47a5891e8455c9857c4a3
 	     $('#course').val('');
 	     $('#time').val('');
 	     $('#venue').val('');
@@ -267,17 +223,10 @@ $(function() {
 	});
 	lecturedata.on('child_added', function(snaps) {
         var lrd = snaps.val();
-<<<<<<< HEAD
         displayChatMessage(lrd.lopt,lrd.course,lrd.time,lrd.venue);
       });
 
       function displayChatMessage(lopt,course,time,venue) {
-=======
-        displayChatMessage(lrd.day,lrd.course,lrd.time,lrd.venue);
-      });
-
-      function displayChatMessage(day,course,time,venue) {
->>>>>>> 748971b362abbad0f1f47a5891e8455c9857c4a3
 
       	 $('#lectureTable').append("<tr><td>"+day+"</td><td>"+course+"</td><td>"+time+"</td><td>"+venue+"</td></tr>");
       	
