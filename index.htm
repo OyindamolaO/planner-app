@@ -2,10 +2,10 @@
 <html lang="en">
 <html>
 <head>
+<link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
 <meta charset="utf-8">
-<meta charset=utf-8 />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>My App</title>
+	<title>Planner App</title>
 <!--css styles-->
 <link rel="stylesheet" href="mycss.css">
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
@@ -14,249 +14,432 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-<!--scrip-->
+<!--script-->
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js"></script>
 <script src="https://cdn.firebase.com/js/client/1.1.1/firebase.js"></script>
+ <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+ <script src="jquery.backstretch.min.js"></script>
+
 <script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js"></script>
 
-	<script type="text/javascript">
-	
-$(document).ready(function(){
-    $(".slidedownimg").click(function(){
 
-        $("#links").show(1000);
-    });
-    });
-</script>
 </head>
 <body>
-<div id="backdiv" data-role="page">
-<div class="tinted-image">
- <div class="wrap">
- <img src="images/sch.jpg" width="100px" height="100px">
-<h1 class="neon">Personal planner</h1>
-<a href="#mainapp" data-transition="slidefade" id ="cus" class="btn btn-lg">
-  <button>EXPLORE <span class="glyphicon glyphicon-arrow-right"></span></button>
-  </a>
- </div>
-</div>
-</div>
-
-<div data-role="page" id="mainapp">
-<div id ="homepage"><a href="#backdiv" data-transition="pop"><span class="glyphicon glyphicon-chevron-left"></span> Back to HomePage</a></div>
-<div class="header">
-<ul>
-	<li class="pull-left" ><img src="images/menu.png" width="30px" height="30px"  class ="slidedownimg" ></li>
-	<li class="pull-right">ssssssss</li>
-</ul>
-</div>
-<div class="container-fluid">
-<div class="row">
-<div class="col-xs-3">
-	<div id="links">
-	<ul>
-		<li><h2 class="neon">Notes</h2></li>
-		<li><a href="#newnotes" data-toggle="tab">New</a></li>
-		<li><a href="#inprogress" data-toggle="tab">In Progress()</a></li>
-		<li><a href="#done" data-toggle="tab">Done()</a></li>
-		<li><a href="#Trash" data-toggle="tab">Trash</a></li>
-
-	<hr/>
-	
-		<li><h2 class="neon">Reminders</h2></li>
-		<li><a href="#reminder" data-toggle="tab">Add Reminder</a></li>
-		<li><a href="#viewreminder" data-toggle="tab">View Reminder(s)</a></li>
-	<hr/>
-	
-		<li><h2 class="neon">School Timetable</li>
-		<li><a href="#lecture" data-toggle="tab">Lecture Timetable</a></li>
-		<li><a href="#test" data-toggle="tab">Test Timetable</a></li>
-		<li><a href="#exam" data-toggle="tab">Examination Timetable</a></li>
-	</ul>
-</div>
-</div>
-<div class="col-xs-9">		
-<div class="displaybody">
-	
-<div class="tab-content">
-    <div id="newnotes" class="tab-pane fade">
-    <div class="container-fluid notetab">
-		<ul class="nav nav-tabs">
-			<li class="active"><a data-toggle="tab" href="#add" id ="tabnote">Add Note</a></li>
-			<li class="nav nav-tabs navbar-right"><a data-toggle="tab" href="#addlist" id ="tablist">Add List</a></li>
-		</ul>
-		<div class="tab-content">
-			    <div id="add" class="tab-pane fade in active">
-			   
-			    <form class="addform">
-			    	<input type="text" placeholder="Title" class="noteinput" id = "notetext">
-			    	<textarea placeholder= "Details" id ="details"></textarea>
-			    	<div class="row">
-			    		<div class="col-xs-12">
-			  				<button class="simg" onclick="cancel()" class= "cancel" id = "leftn" style="width:100px;height:50px">Cancel</button>
-			  			
-							<button class="simg" id ="rightn" style="width:100px;height:50px">Save</button>				
-						</div>
-			    	</div>
-			    	</form>
-			    </div>
+	<div id="backdiv" data-role="page">
+			
 				
-				<div id="addlist" class="tab-pane fade">
-				<ul>
-					<li><input type="checkbox" name="check" class="checkb"><input type="text" name="list" id="newlist"><a href="#">
-          <span class="glyphicon glyphicon-plus"></span>
-        </a></li>
-				</ul>
-				</div>
+					<div class="tinted-image">
+						<div class="wrap">
+								<img src="images/sch.jpg" width="100px" height="100px">
+								<h1 class="neon">N-Planner</h1>
+							<a href="#mainapp" data-transition="slidefade" id ="cus" class="btn btn-lg">
+								<button>EXPLORE <span class="glyphicon glyphicon-arrow-right"></span></button>
+							</a>
+
+					 	</div>
+				
+			
 		</div>
 	</div>
 
-    </div>
-    
+	<div data-role="page" id="mainapp">
+		
+		<div class="header">
+			<ul>
+			
+				<li class="pull-left" ><img src="images/menu.png" width="30px" height="30px" id = "slidedown" class ="slidedownimg" ></li>
+				<a data-toggle="tooltip" title="go to facebook" href="https://www.facebook.com/hoindermoreler.hormoretuyi" target="_blank"><li class="pull-right"><img src="images/facebook.jpg" width="30px" height="25px" class ="slidedownimg"></li></a>
+				<a data-toggle="tooltip" title="go to twitter" href="https://twitter.com/OMOTUYIO" target="_blank"><li class="pull-right"><img src="images/twitter.png" width="30px" height="25px"  class ="slidedownimg"></li></a>
+				<a data-toggle="tooltip" title="send an email" href="mailto:damola.omotuyi@gmail.com?" target="_top"><li class="pull-right"><img src="images/email.png" width="30px" height="25px"  class ="slidedownimg"></a></li>
+		
 
-    
-    <div id="inprogress" class="tab-pane fade">
-    <div class="container-fluid">
-		dd
-	</div>
+			</ul>
+		</div>
 
-    </div>
-    
-    
-    <div id="done" class="tab-pane fade">
-    <div class="container-fluid">
-		dd
-	</div>
-    </div>
-  
-  
-    <div id="Trash" class="tab-pane fade">
-    <div class="container-fluid">
-		dd
-	</div>
-
-    </div>
-    
-    
-    <div id="reminder" class="tab-pane fade">
-    <div class="container-fluid remind">
-		<form>
-    
-        
-            <fieldset>
-                <legend>Add Schedule</legend>
-                <div class="row">
-                    	<div class="col-xs-12">
-                    		<label>Schedule</label>
-                      		<input type="text" id="schedule" placeholder="schedule"></input>
-                   		</div>
-                </div>    
-                <div class="row">
-                    	<div class="col-xs-12">
-                    		<label>Location</label>
-                      		<input type="text" id="location" placeholder="location"></input>
-                    	</div>
-                </div>    
-                <div class="row">
-                    	<div class="col-xs-12">
-                    		<label>Description</label>
-                     		<textarea rows="4" cols="50" name="description">
-							</textarea>
-                    	</div>
-                </div>    
-             	
-                <div class="row">
-                  	 
-                    	<div class="col-xs-7">
-                    		<label>From</label>
-                      		<input type="date" name="startdate"></input>
-						</div>
-
-						<div class="col-xs-5">
-						<label>Time</label>
-                       		<input type="time" name="user_time" size="20"></input>
-                    	</div>
-				</div>
-				<div class="row">
-                      <div class="col-xs-7">
-							<label>To</label>
-                      		<input type="date" name="enddate"></input>
-                      </div>
-
-                      <div class="col-xs-5">
-                       		<label>Time</label>
-                        	  <input type="time" name="user_time" size="20"></input>
-                	  </div>
-               </div>
-
-   				<div class="row">
-						<div class="col-xs-6">
-			  				<button class="simg" id = "leftn" width="100px" height="20px">Cancel</button>
-			  			</div>
-			  			<div class="col-xs-6">
-							<button class="simg " id ="rightn" width="100px" height="20px">Done</button>				
-						</div>
+		<div class="container-fluid">
+			<div class="row">
+				
+				<div class="col-xs-3">
+					<div id="links">
+							<ul>
+								<li><h2>Notes</h2></li>
+								<li><a href="#newnotes" data-toggle="tab">New</a></li>
+								<li><a href="#done" data-toggle="tab">My Notes</a></li>
+								<li><a href="#inprogress" data-toggle="tab">My List</a></li>
+								
+								
+							<hr/>
+							
+								<li><h2 >Reminders</h2></li>
+								<li><a href="#reminder" data-toggle="tab">Add Reminder</a></li>
+								<li><a href="#viewreminder" data-toggle="tab">View Reminder(s)</a></li>
+							<hr/>
+							
+								<li><h2>School Timetable</li>
+								
+								<li><a href="#lecture" data-toggle="tab">Lecture Timetable</a></li>
+								<li><a href="#exam" data-toggle="tab">Test/Exam Timetable</a></li>
+								<li><a href="#viewtimetable" data-toggle="tab">View Timetable</a></li>
+								
+							</ul>
+					</div>
 				</div>
 
-			</fieldset>
+				<div class="col-xs-9">
+							<div id = "show">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="display green"><p><marquee behavior = "scroll" direction = "up" onmouseover="this.stop();" onmouseout="this.start();" > N-Planner is a planning aid that helps you to organize your thoughts and words into notes!</marquee></p></div>
+						</div>
+						<div class="col-md-4">
+							<div class="display blue"><p><marquee behavior = "scroll" direction = "left" onmouseover="this.stop();" onmouseout="this.start();" >Prioritize Tasks, Be the Master Planner of Your Tasks</marquee></p></div>
+						</div>
+						<div class="col-md-4">
+							<div class="display red"><p><marquee behavior = "scroll" direction = "up" onmouseover="this.stop();" onmouseout="this.start();" >Pen your thoughts down and find it easy to connect!</marquee></p></div>
+						</div>
+					</div>
+				</div>
+				<br/>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="display orange"><p>Students, Come on and get your lecture time table ready. Here you go!</p></div>
+						</div>
+						<div class="col-md-4">
+							<div class="display pink"  ><p>Test and Examinations knocks at the door! How will I get myself ready. Friend, pen down your timetable and get to work!</p></div>
+						</div>
+						<div class="col-md-4">
+							<div class="display yellow" ><p>Welcome!</p></div>
+						</div>
+					</div>
+				</div>
+				<br/>
+				</div>	
+					<div class="displaybody">
+						<div class="tab-content">
+			    				<div id="newnotes" class="tab-pane fade">
+			   						 <div class="notetab">
+										<ul class="nav nav-tabs">
+											<li class="active"><a data-toggle="tab" href="#add" id ="tabnote">Add Note</a></li>
+											<li class="nav nav-tabs navbar-right"><a data-toggle="tab" href="#addlist" id ="tablist">Add List</a></li>
+										</ul>		
+											<div class="tab-content">									
+												<div id="add" class="tab-pane fade in active">						   
+													<form class="addform">
+														<input type="text" placeholder="Title" class="noteinput" id = "notetext" required>
+														<textarea placeholder="Details" id = "details"></textarea>
+													
+														<div class = "colormi">Background Color: <input type="color" id="myColor" value="#ff0080">
+														</div>
+														<br/><br/><br/><br/>
+														<div class="row">
+															<div class="col-xs-12">
+																<a href="#" id = "nbtnc" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
+																</a>		  			
+																<a href="#" id = "nbtns" class="ui-btn ui-corner-all"> <span class="glyphicon glyphicon-ok"></span>&nbsp; &nbsp;Save
+																</a>				
+															</div>
+														</div>    	
+													</form>
+															    
+												</div>	    	
+								    				
+												
+												<div id="addlist" class="tab-pane fade">
+													<div id="initlist">
+														<ul id="ulist">
+														<li class="ilist"><span class="glyphicon glyphicon-plus"></span>Add List Item: </li>
+															<li class="ilist"><input type="text" name="list" id="newlist" autofocus ></li> 
+															
+														</ul>
+												
+													</div>
+											
+												
+					   							<div class="row">
 			
-			
-			</form>
-	</div>
+													<div class="col-xs-6">
+														<a href="#" id = "lbtnc" style= "float:right;" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
+														</a>								
+										  			</div>
+										  			<div class="col-xs-6">
+										  			<a href="#" id = "lbtns" class="ui-btn ui-corner-all"  style= "float:left;"> <span class="glyphicon glyphicon-ok"></span>&nbsp; &nbsp;Save
+										  			</a>					
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+				
+							    <div id="inprogress" class="tab-pane fade">
+								    <div class="container-fluid">								
+										<table class="table" id ="listtable">
+									
+											<tr>
+												<thead><th>List Items</th>
+											 </thead>
+											</tr>
+											<tbody></tbody>
+										</table>
+									</div>
+		   						</div>
+		  	  
+							    
+							    <div id="done" class="tab-pane fade">
+								    <div class="container-fluid">
+								   	 	<div class="row">
+								   	 		<div class="col-md-4"></div>
+								   	 		<div class="col-md-4"><ol class="list-inline" ><li id="messagesDiv"></li></ol></div>
+								   	 		<div class="col-md-4"></div>
+											
+										</div>
+									</div>
+							    </div>
+							  
+							    <div id="Trash" class="tab-pane fade">
+								    <div class="container-fluid">
+										dd
+									</div>
+							    </div>
+							   
+		   						<div id="reminder" class="tab-pane fade">
+		    						<div class="container-fluid remind">
+										<form name = "scheduleform">
+		           							<fieldset>
+								                <legend>Add Schedule</legend>
+								                	<div class="row">
+								                    	<div class="col-xs-12">
+								                    		<label>Schedule</label>
+								                      		<input type="text" id="schedule" placeholder="schedule" autofocus required>
+								                   		</div>
+								               		 </div>    
+								                	<div class="row">
+								                    	<div class="col-xs-12">
+								                    		<label>Location</label>
+								                      		<input type="text" id="location" placeholder="location">
+								                    	</div>
+								               		 </div>    
+									                <div class="row">
+									                    <div class="col-xs-12">
+									                    	<label>Description</label>
+									                    	<textarea placeholder="Description" id = "description"></textarea>
+									                    </div>
+									                </div>    
+									             	
+									                <div class="row">
+									                    	<div class="col-xs-7">
+									                    		<label>From</label>
+									                      		<input type="date" id= "statdate" name="startdate" required >
+															</div>
+															<div class="col-xs-5">
+																<label>Time</label>
+									                       		<input type="time" id = "stattime" name="starttime" size="20" >
+									                    	</div>
+													</div>
+													<div class="row">
+									                      <div class="col-xs-7">
+																<label>To</label>
+									                      		<input type="date" id="endate" name="enddate" >
+									                      </div>
+									                      <div class="col-xs-5">
+									                       		<label>Time</label>
+									                        	  <input type="time" id ="entime" name="endtime" size="20">
+									                	  </div>
+									               </div>
+													
+									   				<div class="row">
 
-    </div>
-   
-    <div id="viewreminder" class="tab-pane fade">
-    <div class="container-fluid">
-		dd
-	</div>
+														<div class="col-xs-6">
+															<a href="#" id = "rbtnc" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
+															</a>
+																
+												  		</div>
+												  		<div class="col-xs-6">
+												  			<a href="#" id = "rbtnd" class="ui-btn ui-corner-all"> <span class="glyphicon glyphicon-ok"></span>&nbsp; &nbsp;Done
+												  			</a>
+																			
+														</div>
+													</div>
+											</fieldset>
+										</form>			
+									</div>
+								</div>
+		   
+					   			<div id="viewreminder" class="tab-pane fade">
+								    <div class="container-fluid">
+										<table class="table" id = "myTable">
+											 <caption class="threed" id = "lecturehead">Schedules<br/></caption>
+												 <thead>
+													<tr>
+													<th>Schedule</th>
+													<th>Location</th>
+													<th>Description</th>
+													<th>Start Date</th>
+													<th>Start Time</th>
+													<th>Start Date</th>
+													<th>End Date</th>
+													
+												</tr>
+												</thead>
+												<tbody>
+													
+												</tbody>
+										</table>
+									</div>
+		    					</div>
+		   		
+								<div id="viewtimetable" class="tab-pane fade">
+									<div class="container-fluid">									
+										<table class="table" id = "lectureTable">
+											 <caption class="threed" id = "lecturehead">Lecture Timetable</caption>
+											
+												 <thead>
+													<tr>
+													<th>Day</th>
+													<th>Courses</th>
+													<th>Time</th>
+													<th>Venue</th>
+												
+												</tr>
+												</thead>
+												<tbody>
+													
+												</tbody>
+										</table>
+  
+									</div>
+									<br/><br/>
+									<div class="container-fluid">
+									
+										<table class="table" id = "testTable">
+											 <caption class="threed" id = "lecturehead">Test/Exam Timetable</caption>
+										
+												 <thead>
+													<tr>
+													<th>Date</th>
+													<th>Courses</th>
+													<th>Time</th>
+													<th>Venue</th>
+													<th>Type</th>
+													
+												</tr>
+												</thead>
+												<tbody>
+													
+												</tbody>
+										</table>
+  
+									</div>
+								</div>
+							    <div id="lecture" class="tab-pane fade">
+								    <div class="container-fluid" >
+								   		<h2 class="threed" id = "lecturehead">Lecture Timetable </h2>
+									    <div class="lecturetab">
+											<ul>
+												<div class="col-xs-6">
+												<li class="lectures" > Day:<select id ="lopt">
+															  <option value="Monday" >Monday</option>
+															  <option value="Tuesday" >Tuesday</option>
+															  <option value="Tuesday" >Wednesday</option>
+															  <option value="Tuesday" >Thursday</option>
+															  <option value="Tuesday" >Friday</option>
+															  <option value="Tuesday" >Saturday</option>
+															  <option value="Tuesday" >Sunday</option>
+															</select></li>
+												</div>
+												<div class="col-xs-6">
+												<li class="lectures" >Time:<input type="time" id = "time"></li>
+												</div>
+											
+												<div class="col-xs-6">
+												<li class="lectures" >Venue:<textarea placeholder="venue" id = "venue"></textarea></li>
+												</div>
+												<div class="col-xs-6">
+												<li class="lectures">Course(s):<textarea placeholder="course(s)" id = "course"></textarea></li>
+												</div>
+											
+											</ul>
+									<br/><br/><br/><br/>
+										<div class="row">
+											<div class="col-xs-12">
+											
+												<a href="#" id = "tbtnc" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
+												</a>		  			
+												<a href="#" id = "tbtns" class="ui-btn ui-corner-all"> <span class="glyphicon glyphicon-ok"></span>&nbsp; &nbsp;Save
+												</a>				
+											</div>
+										</div>
+									</div>
+									
+									</div>
+									
+							    </div>
 
-    </div>
-   
-	
-    <div id="lecture" class="tab-pane fade">
-    <div class="container-fluid">
-		dd
-	</div>
-
-    </div>
-    
-
-    <div id="exam" class="tab-pane fade">
-    <div class="container-fluid">
-		dd
-	
-
-    </div>
-    </div>
-   
-    <div id="test" class="tab-pane fade">
-    <div class="container-fluid">
-		dd
-	</div>
-
-    </div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-</div>
+							    <div id="exam" class="tab-pane fade">
+								    <div class="container-fluid">
+											    <div class="container-fluid" >
+											    <h2 class="threed" id = "lecturehead">Test/Exam Timetable </h2>
+									    <div class="lecturetab">
+											<ul>
+												<div class="col-xs-6">
+												Select Type:<select id ="topt">
+															  <option value="Examination" id = "examoption">Examination</option>
+															  <option value="Test" id = "testoption">Test</option>
+															</select>
+												</div>
+												<div class="col-xs-6">
+												<li class="lectures" >Date:<input type="date" placeholder="Day" id = "tday"></li>
+												</div>
+												<div class="col-xs-6">
+												<li class="lectures" >Time:<input type="time" id = "ttime"></li>
+												</div>
+											
+												<div class="col-xs-6">
+												<li class="lectures" >Venue:<textarea placeholder="venue" id = "tvenue"></textarea></li>
+												</div>
+												<div class="col-xs-6">
+												<li class="lectures">Course(s):<textarea placeholder="course(s)" id = "tcourse"></textarea></li>
+												</div>
+											
+											</ul>
+									
+										<div class="row">
+											<div class="col-xs-12">
+												<a href="#" id = "ebtnc" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-left">Cancel
+												</a>		  			
+												<a href="#" id = "ebtns" class="ui-btn ui-corner-all"> <span class="glyphicon glyphicon-ok"></span>&nbsp; &nbsp;Save
+												</a>				
+											</div>
+										</div>
+									</div>
+									
+									</div>
+															
+								    </div>
+							    </div>
+							   
+							  </div>
+						</div>
+					</div>
+				</div>				
+			</div>		
+		</div>		
+	<script type="text/javascript" src="app.js"></script>
 <script type="text/javascript">
-	$(document).ready(function(){
-    $(".cancel").click(function(){
-        $("#notetext").val(" ");
-    });
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
 });
-</script>
 </script>
 </body>
 </html>
