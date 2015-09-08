@@ -154,14 +154,18 @@ $(function() {
 	     var startdate = $('#stattime').val();
 	     var enddate = $('#endate').val();
 	     var endtime = $('#entime').val();
-
-	     reminderdata.push({schedule:schedule,
+	     alert(enddate)
+	      if(schedule == "" || location == ""|| description == ""|| startdate == ""|| startdate == ""|| enddate == ""|| endtime == ""){
+	     	alert("All fields must be filled");
+	     }else{
+	     	reminderdata.push({schedule:schedule,
 	     					location:location,
 	     					description:description,
 	     					startdate: startdate, 
 		     				starttime: starttime,
 		     				enddate:enddate,
 		     				endtime:endtime});
+		    
 
 	     $('#schedule').val('');
 	     $('#location').val('');
@@ -171,7 +175,7 @@ $(function() {
 	     $('#endate').val('');
 	     $('#entime').val('');
 	     
-	     
+	     }
 	});
 	reminderdata.on('child_added', function(snapshot) {
         var rd = snapshot.val();
