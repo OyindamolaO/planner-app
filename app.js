@@ -154,7 +154,7 @@ $(function() {
 	     var startdate = $('#stattime').val();
 	     var enddate = $('#endate').val();
 	     var endtime = $('#entime').val();
-	     alert(enddate)
+	     alert(enddate);
 	      if(schedule == "" || location == ""|| description == ""|| startdate == ""|| startdate == ""|| enddate == ""|| endtime == ""){
 	     	alert("All fields must be filled");
 	     }else{
