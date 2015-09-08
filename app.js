@@ -147,14 +147,13 @@ $(function() {
 	var dataRef = new Firebase("https://myschedulerapp.firebaseIO.com");
 	var reminderdata = dataRef.child('reminders')
 	$('#rbtnd').click(function() {
-		 var schedule = $('#schedule').val();
-		 var location = $('#location').val();
-		 var description = $('#description').val();
-		 var startdate = $('#statdate').val();
-	     var startdate = $('#stattime').val();
-	     var enddate = $('#endate').val();
-	     var endtime = $('#entime').val();
-	     alert(enddate);
+		 var schedule = document.getElementById("schedule").value;
+		 var location = document.getElementById("location").value;
+		 var description = document.getElementById("description").value;
+		 var startdate = document.getElementById("statdate").value;;
+	     var startdate = document.getElementById("stattime").value;
+	     var enddate = document.getElementById("endate").value;
+	     var endtime = document.getElementById("entime").value;
 	      if(schedule == "" || location == ""|| description == ""|| startdate == ""|| startdate == ""|| enddate == ""|| endtime == ""){
 	     	alert("All fields must be filled");
 	     }else{
