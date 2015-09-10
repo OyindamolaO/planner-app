@@ -229,7 +229,7 @@ $(function() {
 
       function displayChatMessage(lopt,course,time,venue) {
 
-      	 $('#lectureTable').append("<tr><td>"+day+"</td><td>"+course+"</td><td>"+time+"</td><td>"+venue+"</td></tr>");
+      	 $('#lectureTable').append("<tr><td>"+lopt+"</td><td>"+course+"</td><td>"+time+"</td><td>"+venue+"</td></tr>");
       	
       };
 
