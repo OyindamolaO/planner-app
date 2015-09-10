@@ -146,7 +146,6 @@ $(function() {
 $(function() {
 	var dataRef = new Firebase("https://myschedulerapp.firebaseIO.com");
 	var reminderdata = dataRef.child('reminders');
-		var snapshot;
 	$('#rbtnd').click(function() {
 		 var schedule = $('#schedule').val();
 		 var location = $('#location').val();
@@ -184,7 +183,7 @@ $(function() {
       });
 
       function displayChatMessage(schedule,location,description,startdate, starttime,enddate,endtime) {
-	if (snapshot == null){
+	if (rd == null){
 		 $('#myTable').append("<tr><td>No entry</td></tr>")
 		
 	}
