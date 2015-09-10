@@ -182,8 +182,8 @@ $(function() {
       });
 
       function displayChatMessage(schedule,location,description,startdate, starttime,enddate,endtime) {
-	if (reminderdata = ""){
-		alert('no entry')
+	if (reminderdata == ""){
+		 $('#myTable').append("<tr>No entry</tr>")
 		
 	}
 	else{
