@@ -151,10 +151,10 @@ $(function() {
 		 var location = document.getElementById("location").value;
 		 var description = document.getElementById("description").value;
 		 var startdate = document.getElementById("statdate").value;;
-	     var startdate = document.getElementById("stattime").value;
+	     var starttime = document.getElementById("stattime").value;
 	     var enddate = document.getElementById("endate").value;
 	     var endtime = document.getElementById("entime").value;
-	      if(schedule == "" || location == ""|| description == ""|| startdate == ""|| startdate == ""|| enddate == ""|| endtime == ""){
+	      if(schedule == "" || location == ""|| description == ""|| startdate == ""|| starttime == ""|| enddate == ""|| endtime == ""){
 	     	alert("All fields must be filled");
 	     }else{
 	     	reminderdata.push({schedule:schedule,
