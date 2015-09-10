@@ -182,9 +182,11 @@ $(function() {
       });
 
       function displayChatMessage(schedule,location,description,startdate, starttime,enddate,endtime) {
-
+	if(schedule == "" || location == ""|| description == ""|| startdate == ""|| starttime == ""|| enddate == ""|| endtime == ""){
+	     	alert("NO entry");
+	     }else{
       	 $('#myTable').append("<tr><td>"+schedule+"</td><td>"+location+"</td><td>"+description+"</td><td>"+startdate+"</td><td>"+starttime+"</td><td>"+enddate+"</td><td>"+endtime+"</td></tr>");
-      	
+	     }
       };
 
     
