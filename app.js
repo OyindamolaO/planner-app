@@ -145,7 +145,8 @@ $(function() {
 
 $(function() {
 	var dataRef = new Firebase("https://myschedulerapp.firebaseIO.com");
-	var reminderdata = dataRef.child('reminders')
+	var reminderdata = dataRef.child('reminders');
+		var snapshot;
 	$('#rbtnd').click(function() {
 		 var schedule = $('#schedule').val();
 		 var location = $('#location').val();
@@ -176,14 +177,15 @@ $(function() {
 	     
 	     }
 	});
+
 	reminderdata.on('child_added', function(snapshot) {
         var rd = snapshot.val();
         displayChatMessage(rd.schedule,rd.location,rd.description,rd.startdate,  rd.starttime, rd.enddate,rd.endtime);
       });
 
       function displayChatMessage(schedule,location,description,startdate, starttime,enddate,endtime) {
-	if (reminderdata == ""){
-		 $('#myTable').append("<tr>No entry</tr>")
+	if (snapshot == null){
+		 $('#myTable').append("<tr><td>No entry</td></tr>")
 		
 	}
 	else{
